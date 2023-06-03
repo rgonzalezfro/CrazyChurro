@@ -142,7 +142,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.38, y: 2.96, z: -1}
   m_LocalScale: {x: 6, y: 3, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3655637185414066895}
   m_Father: {fileID: 0}
@@ -264,6 +264,7 @@ MonoBehaviour:
   UISlider: {fileID: 3655637184397527174}
   timeCounter: 0
   fulfillingOrder: 0
+  activeOrder: 0
 --- !u!1 &3655637184280040194
 GameObject:
   m_ObjectHideFlags: 0
@@ -612,7 +613,7 @@ RectTransform:
   m_GameObject: {fileID: 3655637185414066894}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1}
-  m_LocalScale: {x: 0.0008, y: 0.0016, z: 0.0047999998}
+  m_LocalScale: {x: 0.0012, y: 0.0024, z: 0.0072000003}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3655637184651240560}
