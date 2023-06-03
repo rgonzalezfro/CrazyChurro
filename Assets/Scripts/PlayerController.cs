@@ -96,6 +96,6 @@ public class PlayerController : MonoBehaviour
 
     private bool MovingForward()
     {
-        return Vector2.Dot(rb.velocity, transform.up) > 0.2;
+        return Vector2.Dot(rb.velocity, transform.up) > 0.1;
     }
 }
