@@ -50,6 +50,8 @@ public class OrderController : MonoBehaviour
         {
             fulfillingOrder = false;
             playerFulfilling = null;
+            timeCounter = 0;
+            UISlider.value = timeCounter;
         }
     }
 
@@ -68,7 +70,6 @@ public class OrderController : MonoBehaviour
 
     private void CompleteOrder()
     {
-        Debug.Log("COMPLETED ORDER");
         activeOrder = false;
         UIOrder.SetActive(false);
         playerFulfilling.GetComponent<PlayerScoreController>()?.AddScore(orderValue);

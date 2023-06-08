@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour
     [Header("Debug")]
     public float throttle;
     public float steering;
+    public float angle;
 
     [Header("Speed Settings")]
     public float acceleration = 2.5f;
@@ -17,11 +18,21 @@ public class PlayerController : MonoBehaviour
     public float turnSpeed = 20f;
     public float turningThreshold = 0.3f;
 
+
+    [Header("Animation Settings")]
+    [SerializeField]
+    private Animator animator;
+    
     private Rigidbody2D rb;
+
+    private Direction previousDirection;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        previousDirection = Direction.Up;
+        SetAnimation(previousDirection, true);
     }
 
     private void Update()
@@ -34,6 +45,8 @@ public class PlayerController : MonoBehaviour
         Acceleration();
 
         Turning();
+
+        Animate();
     }
 
     private void Acceleration()
@@ -97,5 +110,64 @@ public class PlayerController : MonoBehaviour
     private bool MovingForward()
     {
         return Vector2.Dot(rb.velocity, transform.up) > 0.1;
+    }
+
+    private void Animate()
+    {
+        Direction currentDirection;
+
+        float result = Vector3.SignedAngle(Vector3.up, transform.up, Vector3.forward);
+        angle = result;
+        if (-45 < angle && angle < 45)
+        {
+            currentDirection = Direction.Up;
+        }
+        else if (45 <= angle && angle <= 135)
+        {
+            currentDirection = Direction.Left;
+        }
+        else if (-135 <= angle && angle <= -45)
+        {
+            currentDirection = Direction.Right;
+        }
+        else
+        {
+            currentDirection = Direction.Down;
+        }
+
+        if (previousDirection != currentDirection)
+        {
+            SetAnimation(previousDirection, false);
+            SetAnimation(currentDirection, true);
+            previousDirection = currentDirection;
+        }
+
+    }
+
+    private void SetAnimation(Direction direction, bool value)
+    {
+        switch (direction)
+        {
+            case Direction.Up:
+                animator.SetBool("up", value);
+                break;
+            case Direction.Down:
+                animator.SetBool("down", value);
+                break;
+            case Direction.Left:
+                animator.SetBool("left", value);
+                break;
+            case Direction.Right:
+                animator.SetBool("right", value);
+                break;
+        }
+    }
+
+    private enum Direction
+    {
+        Up,
+        Down,
+        Left,
+        Right
     }
 }

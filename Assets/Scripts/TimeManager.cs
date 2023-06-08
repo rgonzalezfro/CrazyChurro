@@ -1,3 +1,4 @@
+using SuperMaxim.Messaging;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -33,6 +34,7 @@ public class TimeManager : MonoBehaviour
             UpdateTimerUI();
             // Timer has reached 0, perform any actions needed
             // (e.g., end game, trigger an event, etc.)
+            Messenger.Default.Publish(new EndGamePayload());
         }
     }
 
