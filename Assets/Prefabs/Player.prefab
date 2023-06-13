@@ -88,13 +88,14 @@ MonoBehaviour:
   throttle: 0
   steering: 0
   angle: 0
-  acceleration: 2.5
-  maxSpeed: 6
-  maxReverseSpeed: 3
-  brakeForce: 1
-  frictionForce: 0.4
-  turnSpeed: 13
-  turningThreshold: 0.3
+  acceleration: 2
+  maxSpeed: 7
+  maxReverseSpeed: 1.8
+  brakeForce: 0.8
+  frictionForce: 0.3
+  turnSpeed: 14
+  turningThreshold: 0.4
+  animator: {fileID: 0}
 --- !u!114 &1824711922
 MonoBehaviour:
   m_ObjectHideFlags: 0
