@@ -22,6 +22,9 @@ public class PlayerController : MonoBehaviour
     [Header("Animation Settings")]
     [SerializeField]
     private Animator animator;
+    [Tooltip("El angulo necesario para cambiar de sprite vertical a sprite de lado")]
+    [Range(10,45)]
+    public float VerticalAmplitude = 30;
     
     private Rigidbody2D rb;
 
@@ -63,7 +66,7 @@ public class PlayerController : MonoBehaviour
         {
             if (MovingForward())
             {
-                rb.AddForce(-rb.velocity * brakeForce);
+                rb.AddForce(-rb.velocity.normalized * brakeForce);
             }
             else if (rb.velocity.magnitude < maxReverseSpeed)
             {
@@ -109,7 +112,7 @@ public class PlayerController : MonoBehaviour
 
     private bool MovingForward()
     {
-        return Vector2.Dot(rb.velocity, transform.up) > 0.1;
+        return Vector2.Dot(rb.velocity, transform.up) > 0;
     }
 
     private void Animate()
@@ -118,15 +121,15 @@ public class PlayerController : MonoBehaviour
 
         float result = Vector3.SignedAngle(Vector3.up, transform.up, Vector3.forward);
         angle = result;
-        if (-45 < angle && angle < 45)
+        if (-VerticalAmplitude < angle && angle < VerticalAmplitude)
         {
             currentDirection = Direction.Up;
         }
-        else if (45 <= angle && angle <= 135)
+        else if (VerticalAmplitude <= angle && angle <= (180- VerticalAmplitude))
         {
             currentDirection = Direction.Left;
         }
-        else if (-135 <= angle && angle <= -45)
+        else if (-(180- VerticalAmplitude) <= angle && angle <= -VerticalAmplitude)
         {
             currentDirection = Direction.Right;
         }

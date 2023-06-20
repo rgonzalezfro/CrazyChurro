@@ -13,6 +13,11 @@ public class PlayerScoreController : MonoBehaviour
         UpdateUI();
     }
 
+    public int GetScore()
+    {
+        return score;
+    }
+
     public void AddScore(int addScore)
     {
         score += addScore;
