@@ -14,8 +14,16 @@ public class UIManagerIngame : MonoBehaviour
 
     [SerializeField]
     GameObject EndGame;
+
+    [Header("End Game Screen")]
     [SerializeField]
     TMPro.TMP_Text EndGameScoreText;
+
+    [SerializeField]
+    TMPro.TMP_Text NewBestScoreText;
+
+    [SerializeField]
+    TMPro.TMP_Text BestScoreInfoText;
 
     [Header("Sources")]
     [SerializeField]
@@ -50,7 +58,21 @@ public class UIManagerIngame : MonoBehaviour
         endGame = true;
         Time.timeScale = 0;
         EndGame.SetActive(true);
-        EndGameScoreText.text = $"${player.GetScore()}";
+
+        int score = player.GetScore();
+
+        EndGameScoreText.text = $"${score}";
+
+        if(score > GameManager.Instance.GetBestScore())
+        {
+            NewBestScoreText.gameObject.SetActive(true);
+            GameManager.Instance.SetBestScore(score);
+        }
+        else
+        {
+            BestScoreInfoText.gameObject.SetActive(true);
+            BestScoreInfoText.text = BestScoreInfoText.text.Replace("{0}", $"${GameManager.Instance.GetBestScore()}");
+        }
     }
 
     private void OnDestroy()

@@ -10,6 +10,7 @@ public class TimeManager : MonoBehaviour
     public TMP_Text timerText; // Reference to the text displaying time
 
     private float currentTime; // Current time in seconds
+    private bool timerStopped = false;
 
     [Header("Debug")]
     public int minutes;
@@ -28,13 +29,14 @@ public class TimeManager : MonoBehaviour
             currentTime -= Time.deltaTime;
             UpdateTimerUI();
         }
-        else
+        else if (!timerStopped)
         {
             currentTime = 0;
             UpdateTimerUI();
             // Timer has reached 0, perform any actions needed
             // (e.g., end game, trigger an event, etc.)
             Messenger.Default.Publish(new EndGamePayload());
+            timerStopped = true;
         }
     }
 

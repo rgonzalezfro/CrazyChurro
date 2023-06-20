@@ -1901,6 +1901,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 583e6b864f7f13d4da2f8506c3d6da5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HUD: {fileID: 3977546008411696507}
+  Menu: {fileID: 6152346453808297910}
+  EndGame: {fileID: 3166248939456449224}
+  EndGameScoreText: {fileID: 6765035828448135324}
+  NewBestScoreText: {fileID: 1668217669980623632}
+  BestScoreInfoText: {fileID: 7270782617059914202}
+  player: {fileID: 0}
 --- !u!1 &3977546009143270574
 GameObject:
   m_ObjectHideFlags: 0
