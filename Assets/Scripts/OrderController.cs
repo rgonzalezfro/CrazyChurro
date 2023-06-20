@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -31,7 +32,13 @@ public class OrderController : MonoBehaviour
     {
         UISlider.maxValue = fulfillingTime;
         UISlider.value = 0;
+    }
+
+    internal void Activate()
+    {
+        Init();
         activeOrder = true;
+        UIOrder.SetActive(true);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

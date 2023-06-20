@@ -1,3 +1,4 @@
+using SuperMaxim.Messaging;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -50,6 +51,16 @@ public class PlayerController : MonoBehaviour
         Turning();
 
         Animate();
+
+        SoundHorn();
+    }
+
+    private void SoundHorn()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Messenger.Default.Publish(new HornSoundPayload() { playerPosition = transform.position });
+        }
     }
 
     private void Acceleration()
