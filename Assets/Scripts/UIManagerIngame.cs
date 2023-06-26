@@ -25,6 +25,10 @@ public class UIManagerIngame : MonoBehaviour
     [SerializeField]
     TMPro.TMP_Text BestScoreInfoText;
 
+    [Header("Horn")]
+    [SerializeField]
+    UIHornController UIHornController;
+
     [Header("Sources")]
     [SerializeField]
     PlayerScoreController player;
@@ -33,6 +37,7 @@ public class UIManagerIngame : MonoBehaviour
     {
         Messenger.Default.Subscribe<EscapePayload>(TogglePause);
         Messenger.Default.Subscribe<EndGamePayload>(ShowEndScreen);
+        Messenger.Default.Subscribe<HornCooldownStartPayload>(HandleHornCooldown);
     }
 
     public void TogglePause(EscapePayload payload)
@@ -75,10 +80,16 @@ public class UIManagerIngame : MonoBehaviour
         }
     }
 
+    private void HandleHornCooldown(HornCooldownStartPayload payload)
+    {
+        UIHornController.StartCoodown(payload.DurationSeconds);
+    }
+
     private void OnDestroy()
     {
         Time.timeScale = 1;
         Messenger.Default.Unsubscribe<EscapePayload>(TogglePause);
         Messenger.Default.Unsubscribe<EndGamePayload>(ShowEndScreen);
+        Messenger.Default.Unsubscribe<HornCooldownStartPayload>(HandleHornCooldown);
     }
 }

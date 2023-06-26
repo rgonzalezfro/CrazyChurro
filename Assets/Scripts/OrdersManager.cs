@@ -39,10 +39,9 @@ public class OrdersManager : MonoBehaviour
         // Randomly select and activate orders
         for (int i = 0; i < numOrdersToActivate; i++)
         {
-            OrderController randomOrder = GetRandomOrder(payload.playerPosition);
+            OrderController randomOrder = GetRandomOrder(payload.PlayerPosition);
             if (randomOrder != null)
             {
-                Debug.Log("ORDER ACTIVATED");
                 randomOrder.Activate();
                 activeOrders.Add(randomOrder);
             }
@@ -74,7 +73,7 @@ public class OrdersManager : MonoBehaviour
         OrderController randomOrder = ordersInRange[randomIndex];
 
         // Ensure the randomly selected order is not already active
-        if (activeOrders.Contains(randomOrder))
+        if (activeOrders.Contains(randomOrder) || !randomOrder.CanActivate())
         {
             return null;
         }

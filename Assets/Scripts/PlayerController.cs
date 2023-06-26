@@ -19,14 +19,19 @@ public class PlayerController : MonoBehaviour
     public float turnSpeed = 20f;
     public float turningThreshold = 0.3f;
 
-
     [Header("Animation Settings")]
     [SerializeField]
     private Animator animator;
     [Tooltip("El angulo necesario para cambiar de sprite vertical a sprite de lado")]
-    [Range(10,45)]
+    [Range(10, 45)]
     public float VerticalAmplitude = 30;
-    
+
+    [Header("Horn Settings")]
+    [SerializeField]
+    private float _hornCooldownDuration = 3f;
+    private float _hornCooldownTime;
+    private bool _hornInCooldown;
+
     private Rigidbody2D rb;
 
     private Direction previousDirection;
@@ -41,9 +46,9 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        throttle = Input.GetAxis("Vertical");    // Get input for throttle (W for forward, S for reverse).
-        steering = Input.GetAxis("Horizontal");  // Get input for steering (A for left, D for right).
-        
+        throttle = Input.GetAxis("Vertical");
+        steering = Input.GetAxis("Horizontal");
+
         AlignSpeedAndDirection();
 
         Acceleration();
@@ -52,14 +57,32 @@ public class PlayerController : MonoBehaviour
 
         Animate();
 
+        HornCooldown();
+
         SoundHorn();
+    }
+
+    private void HornCooldown()
+    {
+        if (_hornInCooldown)
+        {
+            _hornCooldownTime += Time.deltaTime;
+            if (_hornCooldownTime >= _hornCooldownDuration)
+            {
+                _hornCooldownTime = _hornCooldownDuration;
+                _hornInCooldown = false;
+            }
+        }
     }
 
     private void SoundHorn()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && !_hornInCooldown)
         {
-            Messenger.Default.Publish(new HornSoundPayload() { playerPosition = transform.position });
+            Messenger.Default.Publish(new HornSoundPayload(transform.position));
+            Messenger.Default.Publish(new HornCooldownStartPayload(_hornCooldownDuration));
+            _hornInCooldown = true;
+            _hornCooldownTime = 0;
         }
     }
 
@@ -136,11 +159,11 @@ public class PlayerController : MonoBehaviour
         {
             currentDirection = Direction.Up;
         }
-        else if (VerticalAmplitude <= angle && angle <= (180- VerticalAmplitude))
+        else if (VerticalAmplitude <= angle && angle <= (180 - VerticalAmplitude))
         {
             currentDirection = Direction.Left;
         }
-        else if (-(180- VerticalAmplitude) <= angle && angle <= -VerticalAmplitude)
+        else if (-(180 - VerticalAmplitude) <= angle && angle <= -VerticalAmplitude)
         {
             currentDirection = Direction.Right;
         }

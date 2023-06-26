@@ -1,4 +1,4 @@
-using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,8 +7,18 @@ public class OrderController : MonoBehaviour
     public string playerTag;
     public float fulfillingTime;
     public int orderValue;
+    public float delayToActivate = 1f;
+
+    [Header("Cooldown Settings")]
+    [SerializeField]
+    private float _cooldownDuration = 5f;
+    [SerializeField]
+    private bool _cooldownFeedback;
+    private float _cooldownTime;
+    private bool _inCooldown;
 
     public GameObject UIOrder;
+    public GameObject UICooldown;
     public Slider UISlider;
 
     [Header("Debug")]
@@ -17,6 +27,7 @@ public class OrderController : MonoBehaviour
     public bool activeOrder;
 
     private GameObject playerFulfilling;
+
 
     private void Start()
     {
@@ -28,6 +39,28 @@ public class OrderController : MonoBehaviour
         Init();
     }
 
+    private void OnDestroy()
+    {
+        StopAllCoroutines();
+    }
+
+    private void Update()
+    {
+        if (_inCooldown)
+        {
+            _cooldownTime += Time.deltaTime;
+            if (_cooldownTime >= _cooldownDuration)
+            {
+                _cooldownTime = _cooldownDuration;
+                _inCooldown = false;
+                if (_cooldownFeedback)
+                {
+                    UICooldown.SetActive(false);
+                }
+            }
+        }
+    }
+
     private void Init()
     {
         UISlider.maxValue = fulfillingTime;
@@ -37,6 +70,17 @@ public class OrderController : MonoBehaviour
     internal void Activate()
     {
         Init();
+        StartCoroutine(ActivateOrderDelayed());
+    }
+
+    public bool CanActivate()
+    {
+        return !(activeOrder || _inCooldown);
+    }
+
+    private IEnumerator ActivateOrderDelayed()
+    {
+        yield return new WaitForSeconds(delayToActivate);
         activeOrder = true;
         UIOrder.SetActive(true);
     }
@@ -83,5 +127,12 @@ public class OrderController : MonoBehaviour
 
         fulfillingOrder = false;
         playerFulfilling = null;
+
+        _inCooldown = true;
+        _cooldownTime = 0;
+        if (_cooldownFeedback)
+        {
+            UICooldown.SetActive(true);
+        }
     }
 }
