@@ -49,8 +49,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.8, y: 1.5}
+  m_Offset: {x: 0, y: 0.13}
+  m_Size: {x: 0.5, y: 0.5}
   m_Direction: 0
 --- !u!50 &2417285396512437127
 Rigidbody2D:
@@ -88,14 +88,16 @@ MonoBehaviour:
   throttle: 0
   steering: 0
   angle: 0
-  acceleration: 2
+  acceleration: 5
   maxSpeed: 7
   maxReverseSpeed: 1.8
-  brakeForce: 0.8
+  brakeForce: 6.5
   frictionForce: 0.3
   turnSpeed: 14
   turningThreshold: 0.4
-  animator: {fileID: 0}
+  animator: {fileID: 9118518046102438110}
+  VerticalAmplitude: 30
+  _hornCooldownDuration: 3
 --- !u!114 &1824711922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,7 +139,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2417285396512437145}
   m_RootOrder: 0
@@ -182,8 +184,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -1922622814, guid: 022bf72fdcfc0e44c8c7f797f19ddcb7, type: 3}
+  m_SortingOrder: 9
+  m_Sprite: {fileID: 1312375557, guid: 022bf72fdcfc0e44c8c7f797f19ddcb7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -193,7 +195,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!95 &9118518046102438110
 Animator:
   serializedVersion: 5
