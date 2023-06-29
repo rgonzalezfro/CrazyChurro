@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Settings
   m_EditorClassIdentifier: 
   headerSettings:
-    headerText: Orders
-    headerColor: {r: 0.16522783, g: 0.745283, b: 0.63951194, a: 1}
+    headerText: Navigation
+    headerColor: {r: 0.39737672, g: 0.16470586, b: 0.74509805, a: 1}
     textAlignmentOptions: 0
     fontStyleOptions: 0
     fontSize: 12
