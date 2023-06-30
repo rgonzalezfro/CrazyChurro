@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 10
+  spritePixelsToUnits: 20
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
@@ -204,7 +204,7 @@ TextureImporter:
       name: ui_icon_pastelito
       rect:
         serializedVersion: 2
-        x: 383
+        x: 384
         y: 80
         width: 16
         height: 14
@@ -537,7 +537,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: prop_tree_1
+      name: tree_1
       rect:
         serializedVersion: 2
         x: 209
@@ -558,7 +558,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: prop_tree_2
+      name: tree_2
       rect:
         serializedVersion: 2
         x: 241
@@ -578,342 +578,6 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: prop_sign_2
-      rect:
-        serializedVersion: 2
-        x: 99
-        y: 24
-        width: 10
-        height: 23
-      alignment: 9
-      pivot: {x: 0.49114075, y: 0.0922286}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 54db244cb630355459419cda624a0f85
-      internalID: 126962221
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: prop_sign_1
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 24
-        width: 10
-        height: 23
-      alignment: 9
-      pivot: {x: 0.5177185, y: 0.03006139}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2271a69a1f1aab242a7092a5df43765d
-      internalID: 114039924
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: prop_bar_1
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 33
-        width: 8
-        height: 13
-      alignment: 9
-      pivot: {x: 0.45412493, y: 0.10861088}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3592c8b85b553484eb4bca90f7e1c164
-      internalID: -1634855125
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: prop_bar_2
-      rect:
-        serializedVersion: 2
-        x: 22
-        y: 33
-        width: 4
-        height: 12
-      alignment: 9
-      pivot: {x: 0.49999905, y: 0.1297795}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bed3746e2cef64047abcd7f3627b5d63
-      internalID: -1726724560
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: prop_lamp_1
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 24
-        width: 6
-        height: 24
-      alignment: 9
-      pivot: {x: 0.4852346, y: 0.08337823}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a88d8e176e2a9c444a51ab90528b73c7
-      internalID: 1582156373
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: prop_lamp_2
-      rect:
-        serializedVersion: 2
-        x: 83
-        y: 24
-        width: 10
-        height: 24
-      alignment: 9
-      pivot: {x: 0.46203917, y: 0.07177806}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a46425ae44db4dc4e98515d2f2aa1784
-      internalID: -331626945
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: prop_trash_1
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 32
-        width: 10
-        height: 16
-      alignment: 9
-      pivot: {x: 0.50126076, y: 0.24077272}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d1a6908a5bfe1d40a89e98de1e53de9
-      internalID: -1459171302
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: prop_trash_2
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 16
-        width: 10
-        height: 16
-      alignment: 9
-      pivot: {x: 0.5303627, y: 0.2333889}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2557fc88fe2318347bf9da9e4ed7f3a8
-      internalID: 20228698
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: prop_bank
-      rect:
-        serializedVersion: 2
-        x: 125
-        y: 32
-        width: 22
-        height: 16
-      alignment: 9
-      pivot: {x: 0.5172556, y: 0.5593138}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d19e050f4f912c143af3bee43da04d88
-      internalID: -1680693295
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: people_0
-      rect:
-        serializedVersion: 2
-        x: 370
-        y: 181
-        width: 12
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9b6147674f42360408f7b25fc359d58f
-      internalID: 342657669
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: people_1
-      rect:
-        serializedVersion: 2
-        x: 386
-        y: 181
-        width: 12
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d53abca0510bdea4cb2c5205ff0681a0
-      internalID: 880525183
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: people_2
-      rect:
-        serializedVersion: 2
-        x: 402
-        y: 181
-        width: 12
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 894d0dfa4a94631419bf91bc2467d603
-      internalID: 1926312987
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: people_3
-      rect:
-        serializedVersion: 2
-        x: 418
-        y: 181
-        width: 12
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce49d3dfa1fdaf5479d42fca304af127
-      internalID: 1025623910
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: people_4
-      rect:
-        serializedVersion: 2
-        x: 434
-        y: 181
-        width: 12
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cb71fb7448edb57489c912499f147299
-      internalID: 139654601
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: people_5
-      rect:
-        serializedVersion: 2
-        x: 450
-        y: 181
-        width: 12
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e54571cf396aaed48ad0c3aeac705657
-      internalID: 1911431535
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: people_6
-      rect:
-        serializedVersion: 2
-        x: 466
-        y: 181
-        width: 12
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 968d4017acb0f6245a3c9c3ced2390ad
-      internalID: -917658912
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -929,25 +593,8 @@ TextureImporter:
       char_front: -1081664668
       char_side: -1922622814
       char_sprite_1: -1518998901
-      people_0: 342657669
-      people_1: 880525183
-      people_2: 1926312987
-      people_3: 1025623910
-      people_4: 139654601
-      people_5: 1911431535
-      people_6: -917658912
-      prop_bank: -1680693295
-      prop_bar_1: -1634855125
-      prop_bar_2: -1726724560
-      prop_lamp_1: 1582156373
-      prop_lamp_2: -331626945
-      prop_sign_1: 114039924
-      prop_sign_2: 126962221
-      prop_trash_1: -1459171302
-      prop_trash_2: 20228698
-      prop_tree_1: -736790140
-      prop_tree_2: -166021043
-      tilemap_7: 435733610
+      tree_1: -736790140
+      tree_2: -166021043
       ui_check: -149881079
       ui_cross: 891122771
       ui_dialog_white: 1359857285
