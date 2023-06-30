@@ -178,7 +178,6 @@ public class PlayerController : MonoBehaviour
             SetAnimation(currentDirection, true);
             previousDirection = currentDirection;
         }
-
     }
 
     private void SetAnimation(Direction direction, bool value)
