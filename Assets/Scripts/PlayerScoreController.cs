@@ -26,6 +26,6 @@ public class PlayerScoreController : MonoBehaviour
 
     private void UpdateUI()
     {
-        scoreText.text = $"${score}";
+        scoreText.text = $"{score}";
     }
 }

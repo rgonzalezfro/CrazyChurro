@@ -1,8 +1,14 @@
+using SuperMaxim.Messaging;
 using System.Collections;
 using UnityEngine;
 
-public class PlayerCollisionController : MonoBehaviour
+public class PlayerHPController : MonoBehaviour
 {
+    [Header("HP Settings")]
+    [SerializeField]
+    private int maxHp = 3;
+
+
     [Header("Crash Settings")]
     [SerializeField]
     private string _pedestrianTag = "Pedestrian";
@@ -14,12 +20,16 @@ public class PlayerCollisionController : MonoBehaviour
     private GameObject _crashAnimation;
 
     private PlayerController playerController;
-
     private bool hasCrashed = false;
+    private int currentHp = 0;
+
 
     private void Start()
     {
         playerController = GetComponent<PlayerController>();
+        currentHp = maxHp;
+
+        Messenger.Default.Publish(new SetHPPayload(currentHp));
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -29,7 +39,16 @@ public class PlayerCollisionController : MonoBehaviour
             _crashAnimation.SetActive(true);
             playerController.enabled = false;
             hasCrashed = true;
-            StartCoroutine(EnableControls());
+            currentHp--;
+            Messenger.Default.Publish(new SetHPPayload(currentHp));
+            if (currentHp > 0)
+            {
+                StartCoroutine(EnableControls());
+            }
+            else
+            {
+                Messenger.Default.Publish(new EndGamePayload());
+            }
         }
     }
 
