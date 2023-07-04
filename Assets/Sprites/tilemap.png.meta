@@ -285,69 +285,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ui_check
-      rect:
-        serializedVersion: 2
-        x: 354
-        y: 50
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af29029915654ea4f99519301b6cd9b9
-      internalID: -149881079
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ui_cross
-      rect:
-        serializedVersion: 2
-        x: 371
-        y: 50
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7adc816103f9d2444afc3893cb6b2399
-      internalID: 891122771
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ui_home
-      rect:
-        serializedVersion: 2
-        x: 386
-        y: 50
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a3eb7fcf37a48649a898c3729057baa
-      internalID: -1973536714
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: ui_dialog_white
       rect:
         serializedVersion: 2
@@ -768,7 +705,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: people_0
+      name: people_00
       rect:
         serializedVersion: 2
         x: 369
@@ -789,7 +726,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: people_1
+      name: people_10
       rect:
         serializedVersion: 2
         x: 385
@@ -810,7 +747,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: people_2
+      name: people_20
       rect:
         serializedVersion: 2
         x: 401
@@ -831,7 +768,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: people_3
+      name: people_30
       rect:
         serializedVersion: 2
         x: 416
@@ -852,7 +789,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: people_4
+      name: people_40
       rect:
         serializedVersion: 2
         x: 432
@@ -873,7 +810,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: people_5
+      name: people_50
       rect:
         serializedVersion: 2
         x: 448
@@ -894,7 +831,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: people_6
+      name: people_60
       rect:
         serializedVersion: 2
         x: 464
@@ -914,6 +851,321 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: hearth_full
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 51
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34801ab81244efb4888fc19dcbe27042
+      internalID: 721088370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hearth_empty
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 51
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244fbf9bbdb2ab6498f4b26c27507b0b
+      internalID: -1882162234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: people_11
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 5
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f320fac58e906243a37dccacba813b1
+      internalID: -1520251133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: people_01
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 5
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73faf44e04aaf14aa5bdd8a82d566be
+      internalID: -563022849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: people_21
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 5
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24359c5f1a3c4d4d871b9716d8fcbb2
+      internalID: -1875862898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: people_31
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 5
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 286b204408de1f34382edd604b2a23fe
+      internalID: -432951639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: people_41
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 5
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10432fe806a3ab945bc630348ef55015
+      internalID: 1661775076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: people_51
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 5
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43b5074cd584a0b40ada2f568ff3c1bd
+      internalID: 464708025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: people_61
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 5
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86be7b66c009e52429984560010d38fa
+      internalID: -1506437954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_bird_01
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 81
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fb13350ce32c254f900928f20d19eed
+      internalID: -1191390733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_bird_02
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 81
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1145df83b1158fb408606812a227af61
+      internalID: 1426348188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_bird_11
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 98
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ae1295097534844b4267535566ab55
+      internalID: -856161231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_bird_12
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 98
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28ed336ee68bcf242b205e995b179c06
+      internalID: -1471015061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_rat_01
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 112
+        width: 27
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e5cc10c0f46a04c84790420ee9a3fb
+      internalID: -1877025259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_rat_02
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 112
+        width: 29
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ac74d3ec50e134d98f4f130a3098a2
+      internalID: 1040524622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -925,17 +1177,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      anim_bird_01: -1191390733
+      anim_bird_02: 1426348188
+      anim_bird_11: -856161231
+      anim_bird_12: -1471015061
+      anim_rat_01: -1877025259
+      anim_rat_02: 1040524622
       char_back: 1312375557
       char_front: -1081664668
       char_side: -1922622814
       char_sprite_1: -1518998901
-      people_0: 342657669
-      people_1: 880525183
-      people_2: 1926312987
-      people_3: 1025623910
-      people_4: 139654601
-      people_5: 1911431535
-      people_6: -917658912
+      hearth_empty: -1882162234
+      hearth_full: 721088370
+      people_00: 342657669
+      people_01: -563022849
+      people_10: 880525183
+      people_11: -1520251133
+      people_20: 1926312987
+      people_21: -1875862898
+      people_30: 1025623910
+      people_31: -432951639
+      people_40: 139654601
+      people_41: 1661775076
+      people_50: 1911431535
+      people_51: 464708025
+      people_60: -917658912
+      people_61: -1506437954
       prop_bank: -1680693295
       prop_bar_1: -1634855125
       prop_bar_2: -1726724560

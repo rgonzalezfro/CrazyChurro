@@ -94,7 +94,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (throttle == 0)
         {
-            rb.AddForce(-rb.velocity * frictionForce);
+            rb.AddForce(-rb.velocity.normalized * frictionForce);
         }
         else if (throttle < 0)
         {
