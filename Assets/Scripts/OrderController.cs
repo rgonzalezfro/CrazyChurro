@@ -9,6 +9,8 @@ public class OrderController : MonoBehaviour
     public int orderValue;
     public float delayToActivate = 1f;
 
+    public FoodScriptableObject[] possibleFoods;
+
     [Header("Cooldown Settings")]
     [SerializeField]
     private float _cooldownDuration = 15f;
@@ -23,6 +25,7 @@ public class OrderController : MonoBehaviour
     public GameObject UIOrder;
     public GameObject UICooldown;
     public Slider UISlider;
+    public SpriteRenderer OrderImage;
 
     [Header("Debug")]
     public float timeCounter;
@@ -89,6 +92,15 @@ public class OrderController : MonoBehaviour
         activeOrder = true;
         UIOrder.SetActive(true);
         spriteRenderer.enabled = true;
+        var food = GetRandomFood();
+        orderValue = food.Price;
+        OrderImage.sprite = food.Image;
+    }
+
+    private FoodScriptableObject GetRandomFood()
+    {
+        int index = Random.Range(0, possibleFoods.Length);
+        return possibleFoods[index];
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

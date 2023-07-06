@@ -705,7 +705,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: people_00
+      name: npc_00
       rect:
         serializedVersion: 2
         x: 369
@@ -713,7 +713,7 @@ TextureImporter:
         width: 14
         height: 22
       alignment: 9
-      pivot: {x: 0.49244037, y: 0.0718037}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -726,7 +726,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: people_10
+      name: npc_10
       rect:
         serializedVersion: 2
         x: 385
@@ -734,7 +734,7 @@ TextureImporter:
         width: 14
         height: 24
       alignment: 9
-      pivot: {x: 0.49244037, y: 0.05897395}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -747,7 +747,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: people_20
+      name: npc_20
       rect:
         serializedVersion: 2
         x: 401
@@ -755,7 +755,7 @@ TextureImporter:
         width: 14
         height: 24
       alignment: 9
-      pivot: {x: 0.48488072, y: 0.06338438}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -768,7 +768,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: people_30
+      name: npc_30
       rect:
         serializedVersion: 2
         x: 416
@@ -776,7 +776,7 @@ TextureImporter:
         width: 16
         height: 26
       alignment: 9
-      pivot: {x: 0.5, y: 0.07254381}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -789,7 +789,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: people_40
+      name: npc_40
       rect:
         serializedVersion: 2
         x: 432
@@ -797,7 +797,7 @@ TextureImporter:
         width: 15
         height: 26
       alignment: 9
-      pivot: {x: 0.521169, y: 0.060330905}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -810,7 +810,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: people_50
+      name: npc_50
       rect:
         serializedVersion: 2
         x: 448
@@ -818,7 +818,7 @@ TextureImporter:
         width: 16
         height: 24
       alignment: 9
-      pivot: {x: 0.48015404, y: 0.08984566}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -831,7 +831,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: people_60
+      name: npc_60
       rect:
         serializedVersion: 2
         x: 464
@@ -839,7 +839,7 @@ TextureImporter:
         width: 16
         height: 25
       alignment: 9
-      pivot: {x: 0.5132313, y: 0.059679564}
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -894,15 +894,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: people_11
+      name: npc_11
       rect:
         serializedVersion: 2
         x: 417
         y: 5
         width: 14
         height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -915,15 +915,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: people_01
+      name: npc_01
       rect:
         serializedVersion: 2
         x: 401
         y: 5
         width: 14
         height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -936,15 +936,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: people_21
+      name: npc_21
       rect:
         serializedVersion: 2
         x: 433
         y: 5
         width: 14
         height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -957,15 +957,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: people_31
+      name: npc_31
       rect:
         serializedVersion: 2
         x: 448
         y: 5
         width: 16
         height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -978,15 +978,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: people_41
+      name: npc_41
       rect:
         serializedVersion: 2
         x: 464
         y: 5
         width: 15
         height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -999,15 +999,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: people_51
+      name: npc_51
       rect:
         serializedVersion: 2
         x: 480
         y: 5
         width: 16
         height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1020,15 +1020,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: people_61
+      name: npc_61
       rect:
         serializedVersion: 2
         x: 496
         y: 5
         width: 16
         height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1048,8 +1048,8 @@ TextureImporter:
         y: 81
         width: 16
         height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.6, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1069,8 +1069,8 @@ TextureImporter:
         y: 81
         width: 14
         height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.48, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1090,8 +1090,8 @@ TextureImporter:
         y: 98
         width: 11
         height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1111,8 +1111,8 @@ TextureImporter:
         y: 98
         width: 11
         height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1132,8 +1132,8 @@ TextureImporter:
         y: 112
         width: 27
         height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1153,8 +1153,8 @@ TextureImporter:
         y: 112
         width: 29
         height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1189,20 +1189,20 @@ TextureImporter:
       char_sprite_1: -1518998901
       hearth_empty: -1882162234
       hearth_full: 721088370
-      people_00: 342657669
-      people_01: -563022849
-      people_10: 880525183
-      people_11: -1520251133
-      people_20: 1926312987
-      people_21: -1875862898
-      people_30: 1025623910
-      people_31: -432951639
-      people_40: 139654601
-      people_41: 1661775076
-      people_50: 1911431535
-      people_51: 464708025
-      people_60: -917658912
-      people_61: -1506437954
+      npc_00: 342657669
+      npc_01: -563022849
+      npc_10: 880525183
+      npc_11: -1520251133
+      npc_20: 1926312987
+      npc_21: -1875862898
+      npc_30: 1025623910
+      npc_31: -432951639
+      npc_40: 139654601
+      npc_41: 1661775076
+      npc_50: 1911431535
+      npc_51: 464708025
+      npc_60: -917658912
+      npc_61: -1506437954
       prop_bank: -1680693295
       prop_bar_1: -1634855125
       prop_bar_2: -1726724560

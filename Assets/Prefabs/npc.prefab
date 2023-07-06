@@ -52,8 +52,10 @@ MonoBehaviour:
   navDetectionRadius: 20
   remainingDistanceToRecalculate: 1
   navigationCheckInterval: 1
+  navigationLayer:
+    serializedVersion: 2
+    m_Bits: 64
   animator: {fileID: 1992395526561934240}
-  VerticalAmplitude: 15
 --- !u!114 &1992395525383457065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -246,9 +248,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1992395526561934242}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 44f6932885283fe428e5e78ad3ad4ffa, type: 2}
+  m_Controller: {fileID: 9100000, guid: ce75921559ccec6478f7de73f9935095, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -279,3 +281,11 @@ MonoBehaviour:
   - {fileID: 139654601, guid: 022bf72fdcfc0e44c8c7f797f19ddcb7, type: 3}
   - {fileID: 1911431535, guid: 022bf72fdcfc0e44c8c7f797f19ddcb7, type: 3}
   - {fileID: -917658912, guid: 022bf72fdcfc0e44c8c7f797f19ddcb7, type: 3}
+  animators:
+  - {fileID: 9100000, guid: ce75921559ccec6478f7de73f9935095, type: 2}
+  - {fileID: 9100000, guid: 5904c614752324247816cccfa5886758, type: 2}
+  - {fileID: 9100000, guid: 02a6c103bb8beb24ab7c7a6219c0310b, type: 2}
+  - {fileID: 9100000, guid: a03143062fd1d3b4f898564baca88563, type: 2}
+  - {fileID: 9100000, guid: c0dbffab416af224caf29889aa3a455a, type: 2}
+  - {fileID: 9100000, guid: 7611973ce250f7f409bb24d10859cfc5, type: 2}
+  - {fileID: 9100000, guid: 19f91c9229666194b86f8978cec368e5, type: 2}

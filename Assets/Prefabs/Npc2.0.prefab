@@ -500,7 +500,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5169608392049115918}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -606,12 +606,18 @@ MonoBehaviour:
   fulfillingTime: 3
   orderValue: 10
   delayToActivate: 1
+  possibleFoods:
+  - {fileID: 11400000, guid: eee5bb74cfd11be42b0ddeefa9d017f9, type: 2}
+  - {fileID: 11400000, guid: ab570766a5b2fe74cb9153f49d998886, type: 2}
+  - {fileID: 11400000, guid: 8bfc800666c06464aac66bb1d89f9aa6, type: 2}
+  - {fileID: 11400000, guid: faf9963dbde1d5d4d98ee2d1c1158540, type: 2}
   _cooldownDuration: 15
   _completionFeedback: 1
   _completionFeedbackDuration: 2
   UIOrder: {fileID: 5169608390712851771}
   UICooldown: {fileID: 7026599824090792353}
   UISlider: {fileID: 5169608391843661683}
+  OrderImage: {fileID: 2969273835769465340}
   timeCounter: 0
   fulfillingOrder: 0
   activeOrder: 0
@@ -1475,6 +1481,7 @@ MonoBehaviour:
   - {fileID: 139654601, guid: 022bf72fdcfc0e44c8c7f797f19ddcb7, type: 3}
   - {fileID: 1911431535, guid: 022bf72fdcfc0e44c8c7f797f19ddcb7, type: 3}
   - {fileID: -917658912, guid: 022bf72fdcfc0e44c8c7f797f19ddcb7, type: 3}
+  animators: []
 --- !u!114 &7554449162331458000
 MonoBehaviour:
   m_ObjectHideFlags: 0
