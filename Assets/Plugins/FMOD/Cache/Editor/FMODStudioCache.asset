@@ -98,7 +98,7 @@ MonoBehaviour:
   Path: Assets/CrazyChurro/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638242909269858764
+  lastModified: 638243267457329241
   FileSizes:
   - Name: Desktop
     Value: 1118
@@ -142,7 +142,7 @@ MonoBehaviour:
   Path: Assets/CrazyChurro/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638242909269843719
+  lastModified: 638243267457319239
   FileSizes:
   - Name: Desktop
     Value: 1298720
@@ -198,7 +198,7 @@ MonoBehaviour:
   - {fileID: -2663884248082863723}
   StringsBanks:
   - {fileID: -4939988316933454122}
-  cacheTime: 638242909269858764
+  cacheTime: 638243267457329241
   cacheVersion: 131601
 --- !u!114 &781988419692326808
 MonoBehaviour:
