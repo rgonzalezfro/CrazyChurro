@@ -6,6 +6,8 @@ public class UIManagerIngame : MonoBehaviour
     private bool endGame = false;
     private bool paused = false;
 
+    public bool isMobile;
+
     [Header("Sources")]
     [SerializeField]
     PlayerScoreController player;
@@ -14,6 +16,8 @@ public class UIManagerIngame : MonoBehaviour
 
     [SerializeField]
     GameObject HUD;
+    [SerializeField]
+    GameObject UIControls;
     [SerializeField]
     GameObject Menu;
     [SerializeField]
@@ -24,12 +28,19 @@ public class UIManagerIngame : MonoBehaviour
     UIHornController UIHornController;
     [SerializeField]
     UIHPController UIHpController;
-    
+
     [SerializeField]
     UIEndScreenController UIEndScreenController;
 
     void Start()
     {
+        if (!isMobile)
+        {
+            isMobile = Application.isMobilePlatform;
+        }
+
+        UIControls.SetActive(isMobile);
+
         Messenger.Default.Subscribe<EscapePayload>(TogglePause);
         Messenger.Default.Subscribe<EndGamePayload>(ShowEndScreen);
         Messenger.Default.Subscribe<HornCooldownStartPayload>(HandleHornCooldown);
@@ -51,7 +62,7 @@ public class UIManagerIngame : MonoBehaviour
             HUD.SetActive(!paused);
             Menu.SetActive(paused);
 
-            Time.timeScale = paused ? 0 : 1 ;
+            Time.timeScale = paused ? 0 : 1;
         }
     }
 

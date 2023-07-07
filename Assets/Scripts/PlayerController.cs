@@ -1,5 +1,6 @@
 using SuperMaxim.Messaging;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -36,18 +37,83 @@ public class PlayerController : MonoBehaviour
 
     private Direction previousDirection;
 
+
+    [Header("Mobile Controls")]
+    public bool isMobile;
+    public TouchControl upButton;
+    public TouchControl downButton;
+    public TouchControl leftButton;
+    public TouchControl rightButton;
+    public Button hornButton;
+
     private void Awake()
     {
+        if (!isMobile)
+        {
+            isMobile = Application.isMobilePlatform;
+        }
+
+        if (isMobile)
+        {
+            InitMobileControls();
+        }
+
         rb = GetComponent<Rigidbody2D>();
 
         previousDirection = Direction.Up;
         SetAnimation(previousDirection, true);
     }
 
+    private void OnDestroy()
+    {
+        upButton.OnPress -= () => SetVerticalInput(1);
+        downButton.OnPress -= () => SetVerticalInput(-1);
+        leftButton.OnPress -= () => SetHorizontalInput(-1);
+        rightButton.OnPress -= () => SetHorizontalInput(1);
+
+        upButton.OnRelease -= () => SetVerticalInput(0);
+        downButton.OnRelease -= () => SetVerticalInput(0);
+        leftButton.OnRelease -= () => SetHorizontalInput(0);
+        rightButton.OnRelease -= () => SetHorizontalInput(0);
+
+        hornButton.onClick.RemoveAllListeners();
+    }
+
+    void InitMobileControls()
+    {
+        //Debug.LogWarning("UI INPUT INIT");
+        upButton.OnPress += () => SetVerticalInput(1);
+        downButton.OnPress += () => SetVerticalInput(-1);
+        leftButton.OnPress += () => SetHorizontalInput(-1);
+        rightButton.OnPress += () => SetHorizontalInput(1);
+
+        upButton.OnRelease += () => SetVerticalInput(0);
+        downButton.OnRelease += () => SetVerticalInput(0);
+        leftButton.OnRelease += () => SetHorizontalInput(0);
+        rightButton.OnRelease += () => SetHorizontalInput(0);
+
+        hornButton.onClick.AddListener(() => { SoundHorn(); });
+    }
+
+    void SetVerticalInput(float value)
+    {
+        //Debug.LogWarning("VERTICAL INPUT");
+        throttle = value;
+    }
+
+    void SetHorizontalInput(float value)
+    {
+        //Debug.LogWarning("HORIZONTAL INPUT");
+        steering = value;
+    }
+
     private void Update()
     {
-        throttle = Input.GetAxis("Vertical");
-        steering = Input.GetAxis("Horizontal");
+        if (!isMobile)
+        {
+            throttle = Input.GetAxis("Vertical");
+            steering = Input.GetAxis("Horizontal");
+        }
 
         AlignSpeedAndDirection();
 
@@ -59,7 +125,7 @@ public class PlayerController : MonoBehaviour
 
         HornCooldown();
 
-        SoundHorn();
+        SoundHornKey();
     }
 
     private void HornCooldown()
@@ -75,9 +141,17 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void SoundHornKey()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            SoundHorn();
+        }
+    }
+
     private void SoundHorn()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && !_hornInCooldown)
+        if (!_hornInCooldown)
         {
             Messenger.Default.Publish(new HornSoundPayload(transform.position));
             Messenger.Default.Publish(new HornCooldownStartPayload(_hornCooldownDuration));
