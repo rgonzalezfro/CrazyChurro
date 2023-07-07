@@ -1,4 +1,3 @@
-using UnityEditor.Animations;
 using UnityEngine;
 
 public class PedestrianRandomizer : MonoBehaviour
@@ -7,7 +6,7 @@ public class PedestrianRandomizer : MonoBehaviour
     private Sprite[] sprites;
 
     [SerializeField]
-    private AnimatorController[] animators;
+    private AnimatorOverrideController[] animators;
 
     void Awake()
     {

@@ -123,8 +123,8 @@ MonoBehaviour:
   - {fileID: 1426348188, guid: 022bf72fdcfc0e44c8c7f797f19ddcb7, type: 3}
   - {fileID: -856161231, guid: 022bf72fdcfc0e44c8c7f797f19ddcb7, type: 3}
   animators:
-  - {fileID: 9100000, guid: 6bac468fadcbf3a46928959cc114144d, type: 2}
-  - {fileID: 9100000, guid: 6bc71b9faf5e3354d9118ef634223409, type: 2}
+  - {fileID: 22100000, guid: 7a1edd18e6abb864b859972d98a978f9, type: 2}
+  - {fileID: 22100000, guid: e6d86d9ecc3bb0e408d8d4e18e36c771, type: 2}
 --- !u!1 &5387696141490459934
 GameObject:
   m_ObjectHideFlags: 0

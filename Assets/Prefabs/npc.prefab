@@ -51,10 +51,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navDetectionRadius: 20
   remainingDistanceToRecalculate: 1
+  secondsBetweenCalculations: 0
   navigationCheckInterval: 1
   navigationLayer:
     serializedVersion: 2
     m_Bits: 64
+  hasDirection: 0
   animator: {fileID: 1992395526561934240}
 --- !u!114 &1992395525383457065
 MonoBehaviour:
@@ -282,10 +284,10 @@ MonoBehaviour:
   - {fileID: 1911431535, guid: 022bf72fdcfc0e44c8c7f797f19ddcb7, type: 3}
   - {fileID: -917658912, guid: 022bf72fdcfc0e44c8c7f797f19ddcb7, type: 3}
   animators:
-  - {fileID: 9100000, guid: ce75921559ccec6478f7de73f9935095, type: 2}
-  - {fileID: 9100000, guid: 5904c614752324247816cccfa5886758, type: 2}
-  - {fileID: 9100000, guid: 02a6c103bb8beb24ab7c7a6219c0310b, type: 2}
-  - {fileID: 9100000, guid: a03143062fd1d3b4f898564baca88563, type: 2}
-  - {fileID: 9100000, guid: c0dbffab416af224caf29889aa3a455a, type: 2}
-  - {fileID: 9100000, guid: 7611973ce250f7f409bb24d10859cfc5, type: 2}
-  - {fileID: 9100000, guid: 19f91c9229666194b86f8978cec368e5, type: 2}
+  - {fileID: 22100000, guid: 6bc4f88abda6f854783f88fed0c6d513, type: 2}
+  - {fileID: 22100000, guid: 72029ceee131b4f4fabf1b937fd8f93f, type: 2}
+  - {fileID: 22100000, guid: f4b607d4dca9b044c983e838664ed446, type: 2}
+  - {fileID: 22100000, guid: 0a1d87a84ab3a5143b8e76de28d5c45b, type: 2}
+  - {fileID: 22100000, guid: e1c69bd3d899e6f4aa5b851d78496a7a, type: 2}
+  - {fileID: 22100000, guid: 7bf8006cf3f3326448cb81fa3dfe6261, type: 2}
+  - {fileID: 22100000, guid: d1993e3035f217540afbcd9494f256b6, type: 2}

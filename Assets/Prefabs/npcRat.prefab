@@ -26,7 +26,7 @@ PrefabInstance:
     - target: {fileID: 1784447794402511918, guid: 34e04e6cd56816c47bd8b8fa92d6c0e3, type: 3}
       propertyPath: animators.Array.data[0]
       value: 
-      objectReference: {fileID: 9100000, guid: e620da092db08d245a577f2b72de3ebe, type: 2}
+      objectReference: {fileID: 22100000, guid: 4f1a63b609204444c9598282eee77fdd, type: 2}
     - target: {fileID: 1784447794402511918, guid: 34e04e6cd56816c47bd8b8fa92d6c0e3, type: 3}
       propertyPath: animators.Array.data[1]
       value: 
@@ -81,7 +81,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5387696141490459934, guid: 34e04e6cd56816c47bd8b8fa92d6c0e3, type: 3}
       propertyPath: m_Name
-      value: npcAnimal (4)
+      value: npcRat
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34e04e6cd56816c47bd8b8fa92d6c0e3, type: 3}
