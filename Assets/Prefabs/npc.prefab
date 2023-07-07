@@ -12,9 +12,11 @@ GameObject:
   - component: {fileID: 1992395525383457064}
   - component: {fileID: 1992395525383457065}
   - component: {fileID: 1992395525383457066}
+  - component: {fileID: 1346535034}
+  - component: {fileID: 8608677882865821152}
   m_Layer: 0
   m_Name: npc
-  m_TagString: Untagged
+  m_TagString: Pedestrian
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50,8 +52,10 @@ MonoBehaviour:
   navDetectionRadius: 20
   remainingDistanceToRecalculate: 1
   navigationCheckInterval: 1
+  navigationLayer:
+    serializedVersion: 2
+    m_Bits: 64
   animator: {fileID: 1992395526561934240}
-  VerticalAmplitude: 15
 --- !u!114 &1992395525383457065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,6 +126,34 @@ MonoBehaviour:
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
   constrainInsideGraph: 0
+--- !u!58 &1346535034
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992395525383457068}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!114 &8608677882865821152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992395525383457068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b0e4b8c29c2ca446a48cbf684ad7aab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1992395526561934242
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,6 +165,7 @@ GameObject:
   - component: {fileID: 1992395526561934241}
   - component: {fileID: 1992395526561934255}
   - component: {fileID: 1992395526561934240}
+  - component: {fileID: 5305585489318793244}
   m_Layer: 0
   m_Name: sprite
   m_TagString: Untagged
@@ -195,8 +228,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
-  m_Sprite: {fileID: -521845210, guid: f3bf61409fad1d44b9412baaac16598a, type: 3}
+  m_SortingOrder: 9
+  m_Sprite: {fileID: 880525183, guid: 022bf72fdcfc0e44c8c7f797f19ddcb7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -206,7 +239,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!95 &1992395526561934240
 Animator:
   serializedVersion: 5
@@ -217,7 +250,7 @@ Animator:
   m_GameObject: {fileID: 1992395526561934242}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 44f6932885283fe428e5e78ad3ad4ffa, type: 2}
+  m_Controller: {fileID: 9100000, guid: ce75921559ccec6478f7de73f9935095, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -228,3 +261,31 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5305585489318793244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992395526561934242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f99c45277d43e8e4d802b410a9519738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 342657669, guid: 022bf72fdcfc0e44c8c7f797f19ddcb7, type: 3}
+  - {fileID: 880525183, guid: 022bf72fdcfc0e44c8c7f797f19ddcb7, type: 3}
+  - {fileID: 1926312987, guid: 022bf72fdcfc0e44c8c7f797f19ddcb7, type: 3}
+  - {fileID: 1025623910, guid: 022bf72fdcfc0e44c8c7f797f19ddcb7, type: 3}
+  - {fileID: 139654601, guid: 022bf72fdcfc0e44c8c7f797f19ddcb7, type: 3}
+  - {fileID: 1911431535, guid: 022bf72fdcfc0e44c8c7f797f19ddcb7, type: 3}
+  - {fileID: -917658912, guid: 022bf72fdcfc0e44c8c7f797f19ddcb7, type: 3}
+  animators:
+  - {fileID: 9100000, guid: ce75921559ccec6478f7de73f9935095, type: 2}
+  - {fileID: 9100000, guid: 5904c614752324247816cccfa5886758, type: 2}
+  - {fileID: 9100000, guid: 02a6c103bb8beb24ab7c7a6219c0310b, type: 2}
+  - {fileID: 9100000, guid: a03143062fd1d3b4f898564baca88563, type: 2}
+  - {fileID: 9100000, guid: c0dbffab416af224caf29889aa3a455a, type: 2}
+  - {fileID: 9100000, guid: 7611973ce250f7f409bb24d10859cfc5, type: 2}
+  - {fileID: 9100000, guid: 19f91c9229666194b86f8978cec368e5, type: 2}

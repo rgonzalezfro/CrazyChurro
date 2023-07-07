@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 10
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
@@ -120,10 +120,10 @@ TextureImporter:
       name: char_side
       rect:
         serializedVersion: 2
-        x: 375
+        x: 374
         y: 214
-        width: 30
-        height: 29
+        width: 31
+        height: 31
       alignment: 9
       pivot: {x: 0.500001, y: 0.077049516}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,10 +141,10 @@ TextureImporter:
       name: char_front
       rect:
         serializedVersion: 2
-        x: 432
+        x: 431
         y: 214
-        width: 16
-        height: 29
+        width: 18
+        height: 31
       alignment: 9
       pivot: {x: 0.5000019, y: 0.066979244}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,10 +162,10 @@ TextureImporter:
       name: char_back
       rect:
         serializedVersion: 2
-        x: 480
+        x: 479
         y: 214
-        width: 16
-        height: 29
+        width: 18
+        height: 32
       alignment: 9
       pivot: {x: 0.5, y: 0.09719007}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,7 +204,7 @@ TextureImporter:
       name: ui_icon_pastelito
       rect:
         serializedVersion: 2
-        x: 384
+        x: 383
         y: 80
         width: 16
         height: 14
@@ -285,69 +285,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ui_check
-      rect:
-        serializedVersion: 2
-        x: 354
-        y: 50
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af29029915654ea4f99519301b6cd9b9
-      internalID: -149881079
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ui_cross
-      rect:
-        serializedVersion: 2
-        x: 371
-        y: 50
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7adc816103f9d2444afc3893cb6b2399
-      internalID: 891122771
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ui_home
-      rect:
-        serializedVersion: 2
-        x: 386
-        y: 50
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a3eb7fcf37a48649a898c3729057baa
-      internalID: -1973536714
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: ui_dialog_white
       rect:
         serializedVersion: 2
@@ -357,7 +294,7 @@ TextureImporter:
         height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 5, y: 5, z: 5, w: 5}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -537,7 +474,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree_1
+      name: prop_tree_1
       rect:
         serializedVersion: 2
         x: 209
@@ -558,7 +495,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree_2
+      name: prop_tree_2
       rect:
         serializedVersion: 2
         x: 241
@@ -578,6 +515,657 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: prop_sign_2
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 24
+        width: 10
+        height: 23
+      alignment: 9
+      pivot: {x: 0.49114075, y: 0.0922286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54db244cb630355459419cda624a0f85
+      internalID: 126962221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prop_sign_1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 24
+        width: 10
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5177185, y: 0.03006139}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2271a69a1f1aab242a7092a5df43765d
+      internalID: 114039924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prop_bar_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 33
+        width: 8
+        height: 13
+      alignment: 9
+      pivot: {x: 0.45412493, y: 0.10861088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3592c8b85b553484eb4bca90f7e1c164
+      internalID: -1634855125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prop_bar_2
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 33
+        width: 4
+        height: 12
+      alignment: 9
+      pivot: {x: 0.49999905, y: 0.1297795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bed3746e2cef64047abcd7f3627b5d63
+      internalID: -1726724560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prop_lamp_1
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 24
+        width: 6
+        height: 24
+      alignment: 9
+      pivot: {x: 0.4852346, y: 0.08337823}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a88d8e176e2a9c444a51ab90528b73c7
+      internalID: 1582156373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prop_lamp_2
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 24
+        width: 10
+        height: 24
+      alignment: 9
+      pivot: {x: 0.46203917, y: 0.07177806}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a46425ae44db4dc4e98515d2f2aa1784
+      internalID: -331626945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prop_trash_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 32
+        width: 10
+        height: 16
+      alignment: 9
+      pivot: {x: 0.50126076, y: 0.24077272}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1a6908a5bfe1d40a89e98de1e53de9
+      internalID: -1459171302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prop_trash_2
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 16
+        width: 10
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5303627, y: 0.2333889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2557fc88fe2318347bf9da9e4ed7f3a8
+      internalID: 20228698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prop_bank
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 32
+        width: 22
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5172556, y: 0.5593138}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d19e050f4f912c143af3bee43da04d88
+      internalID: -1680693295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_00
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 181
+        width: 14
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b6147674f42360408f7b25fc359d58f
+      internalID: 342657669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_10
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 181
+        width: 14
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d53abca0510bdea4cb2c5205ff0681a0
+      internalID: 880525183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_20
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 181
+        width: 14
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894d0dfa4a94631419bf91bc2467d603
+      internalID: 1926312987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_30
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 181
+        width: 16
+        height: 26
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce49d3dfa1fdaf5479d42fca304af127
+      internalID: 1025623910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_40
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 181
+        width: 15
+        height: 26
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb71fb7448edb57489c912499f147299
+      internalID: 139654601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_50
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 181
+        width: 16
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e54571cf396aaed48ad0c3aeac705657
+      internalID: 1911431535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_60
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 181
+        width: 16
+        height: 25
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 968d4017acb0f6245a3c9c3ced2390ad
+      internalID: -917658912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hearth_full
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 51
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34801ab81244efb4888fc19dcbe27042
+      internalID: 721088370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hearth_empty
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 51
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244fbf9bbdb2ab6498f4b26c27507b0b
+      internalID: -1882162234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_11
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 5
+        width: 14
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f320fac58e906243a37dccacba813b1
+      internalID: -1520251133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_01
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 5
+        width: 14
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73faf44e04aaf14aa5bdd8a82d566be
+      internalID: -563022849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_21
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 5
+        width: 14
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24359c5f1a3c4d4d871b9716d8fcbb2
+      internalID: -1875862898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_31
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 5
+        width: 16
+        height: 26
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 286b204408de1f34382edd604b2a23fe
+      internalID: -432951639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_41
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 5
+        width: 15
+        height: 26
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10432fe806a3ab945bc630348ef55015
+      internalID: 1661775076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_51
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 5
+        width: 16
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43b5074cd584a0b40ada2f568ff3c1bd
+      internalID: 464708025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_61
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 5
+        width: 16
+        height: 25
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86be7b66c009e52429984560010d38fa
+      internalID: -1506437954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_bird_01
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 81
+        width: 16
+        height: 14
+      alignment: 9
+      pivot: {x: 0.6, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fb13350ce32c254f900928f20d19eed
+      internalID: -1191390733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_bird_02
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 81
+        width: 14
+        height: 14
+      alignment: 9
+      pivot: {x: 0.48, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1145df83b1158fb408606812a227af61
+      internalID: 1426348188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_bird_11
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 98
+        width: 11
+        height: 10
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ae1295097534844b4267535566ab55
+      internalID: -856161231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_bird_12
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 98
+        width: 11
+        height: 11
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28ed336ee68bcf242b205e995b179c06
+      internalID: -1471015061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_rat_01
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 112
+        width: 27
+        height: 7
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e5cc10c0f46a04c84790420ee9a3fb
+      internalID: -1877025259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_rat_02
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 112
+        width: 29
+        height: 7
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ac74d3ec50e134d98f4f130a3098a2
+      internalID: 1040524622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -589,12 +1177,44 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      anim_bird_01: -1191390733
+      anim_bird_02: 1426348188
+      anim_bird_11: -856161231
+      anim_bird_12: -1471015061
+      anim_rat_01: -1877025259
+      anim_rat_02: 1040524622
       char_back: 1312375557
       char_front: -1081664668
       char_side: -1922622814
       char_sprite_1: -1518998901
-      tree_1: -736790140
-      tree_2: -166021043
+      hearth_empty: -1882162234
+      hearth_full: 721088370
+      npc_00: 342657669
+      npc_01: -563022849
+      npc_10: 880525183
+      npc_11: -1520251133
+      npc_20: 1926312987
+      npc_21: -1875862898
+      npc_30: 1025623910
+      npc_31: -432951639
+      npc_40: 139654601
+      npc_41: 1661775076
+      npc_50: 1911431535
+      npc_51: 464708025
+      npc_60: -917658912
+      npc_61: -1506437954
+      prop_bank: -1680693295
+      prop_bar_1: -1634855125
+      prop_bar_2: -1726724560
+      prop_lamp_1: 1582156373
+      prop_lamp_2: -331626945
+      prop_sign_1: 114039924
+      prop_sign_2: 126962221
+      prop_trash_1: -1459171302
+      prop_trash_2: 20228698
+      prop_tree_1: -736790140
+      prop_tree_2: -166021043
+      tilemap_7: 435733610
       ui_check: -149881079
       ui_cross: 891122771
       ui_dialog_white: 1359857285

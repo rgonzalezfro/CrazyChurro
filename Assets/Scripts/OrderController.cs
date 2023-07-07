@@ -9,17 +9,23 @@ public class OrderController : MonoBehaviour
     public int orderValue;
     public float delayToActivate = 1f;
 
+    public FoodScriptableObject[] possibleFoods;
+
     [Header("Cooldown Settings")]
     [SerializeField]
-    private float _cooldownDuration = 5f;
-    [SerializeField]
-    private bool _cooldownFeedback;
-    private float _cooldownTime;
+    private float _cooldownDuration = 15f;
     private bool _inCooldown;
+
+    [Header("Feedback Settings")]
+    [SerializeField]
+    private bool _completionFeedback;
+    [SerializeField]
+    private float _completionFeedbackDuration = 2f;
 
     public GameObject UIOrder;
     public GameObject UICooldown;
     public Slider UISlider;
+    public SpriteRenderer OrderImage;
 
     [Header("Debug")]
     public float timeCounter;
@@ -27,10 +33,12 @@ public class OrderController : MonoBehaviour
     public bool activeOrder;
 
     private GameObject playerFulfilling;
+    private SpriteRenderer spriteRenderer;
 
 
     private void Start()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
         Init();
     }
 
@@ -44,21 +52,21 @@ public class OrderController : MonoBehaviour
         StopAllCoroutines();
     }
 
-    private void Update()
+    IEnumerator ShowFeedback()
     {
-        if (_inCooldown)
+        if (_completionFeedback)
         {
-            _cooldownTime += Time.deltaTime;
-            if (_cooldownTime >= _cooldownDuration)
-            {
-                _cooldownTime = _cooldownDuration;
-                _inCooldown = false;
-                if (_cooldownFeedback)
-                {
-                    UICooldown.SetActive(false);
-                }
-            }
+            UICooldown.SetActive(true);
+            yield return new WaitForSeconds(_completionFeedbackDuration);
+            UICooldown.SetActive(false);
         }
+    }
+
+    IEnumerator StartCooldown()
+    {
+        _inCooldown = true;
+        yield return new WaitForSeconds(_cooldownDuration);
+        _inCooldown = false;
     }
 
     private void Init()
@@ -70,7 +78,7 @@ public class OrderController : MonoBehaviour
     internal void Activate()
     {
         Init();
-        StartCoroutine(ActivateOrderDelayed());
+        StartCoroutine(ActivateOrder());
     }
 
     public bool CanActivate()
@@ -78,20 +86,50 @@ public class OrderController : MonoBehaviour
         return !(activeOrder || _inCooldown);
     }
 
-    private IEnumerator ActivateOrderDelayed()
+    private IEnumerator ActivateOrder()
     {
         yield return new WaitForSeconds(delayToActivate);
         activeOrder = true;
         UIOrder.SetActive(true);
+        spriteRenderer.enabled = true;
+        var food = GetRandomFood();
+        orderValue = food.Price;
+        OrderImage.sprite = food.Image;
+    }
+
+    private FoodScriptableObject GetRandomFood()
+    {
+        int index = Random.Range(0, possibleFoods.Length);
+        return possibleFoods[index];
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
+    {
+        CheckStartFullfilling(collision);
+    }
+
+    private void CheckStartFullfilling(Collider2D collision)
     {
         if (activeOrder && collision.CompareTag(playerTag) && !fulfillingOrder)
         {
             timeCounter = 0;
             fulfillingOrder = true;
             playerFulfilling = collision.gameObject;
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        CheckStartFullfilling(collision);
+
+        if (activeOrder && collision.gameObject == playerFulfilling)
+        {
+            timeCounter += Time.deltaTime;
+            UISlider.value = timeCounter;
+            if (timeCounter >= fulfillingTime)
+            {
+                CompleteOrder();
+            }
         }
     }
 
@@ -106,19 +144,6 @@ public class OrderController : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (activeOrder && collision.gameObject == playerFulfilling)
-        {
-            timeCounter += Time.deltaTime;
-            UISlider.value = timeCounter;
-            if (timeCounter >= fulfillingTime)
-            {
-                CompleteOrder();
-            }
-        }
-    }
-
     private void CompleteOrder()
     {
         activeOrder = false;
@@ -127,12 +152,9 @@ public class OrderController : MonoBehaviour
 
         fulfillingOrder = false;
         playerFulfilling = null;
+        spriteRenderer.enabled = false;
 
-        _inCooldown = true;
-        _cooldownTime = 0;
-        if (_cooldownFeedback)
-        {
-            UICooldown.SetActive(true);
-        }
+        StartCoroutine(StartCooldown());
+        StartCoroutine(ShowFeedback());
     }
 }
