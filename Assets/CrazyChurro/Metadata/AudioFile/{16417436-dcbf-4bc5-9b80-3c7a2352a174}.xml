@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{16417436-dcbf-4bc5-9b80-3c7a2352a174}">
+		<property name="assetPath">
+			<value>MotorLoop2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.6000000000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{864c6e9e-3ec6-4732-80c6-6ec90fcc02ce}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{0dd60388-0785-409a-81c7-5c01b7430335}">
+		<property name="assetPath">
+			<value>MenuLoop_75bpm_4-4.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>52.803673469387753</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{864c6e9e-3ec6-4732-80c6-6ec90fcc02ce}</destination>
+		</relationship>
+	</object>
+</objects>

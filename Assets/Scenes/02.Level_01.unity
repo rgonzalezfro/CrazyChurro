@@ -410,6 +410,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 51964593}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &51964595 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 51964593}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &51964596 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 51964593}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &51964597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51964595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &51964598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51964596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &60275289
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1240,6 +1310,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 182797310}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &182797312 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 182797310}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &182797313 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 182797310}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &182797314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182797312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &182797315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182797313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &187162836
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1367,6 +1507,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 193683025}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &193683027 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 193683025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &193683028 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 193683025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &193683029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193683027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &193683030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193683028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &195390524
 GameObject:
   m_ObjectHideFlags: 0
@@ -1467,6 +1677,190 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &210415499
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 210415502}
+  - component: {fileID: 210415501}
+  - component: {fileID: 210415500}
+  - component: {fileID: 210415505}
+  - component: {fileID: 210415504}
+  - component: {fileID: 210415503}
+  m_Layer: 0
+  m_Name: Audio Source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &210415500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210415499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Location
+  TriggerEvent: 1
+  Value: 1
+--- !u!82 &210415501
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210415499}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &210415502
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210415499}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &210415503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210415499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee8fbfca88e7b724abd043774404fb0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &210415504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210415499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07994e51c1b886d4ea4b13ce0c5c53c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &210415505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210415499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e68a5932a1bde2b41a4fbcce470f80a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &211397094 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1992395525383457067, guid: b9445dfc252e9514eae9567a51b2b999, type: 3}
@@ -1590,6 +1984,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 234666855}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &234666857 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 234666855}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &234666858 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 234666855}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &234666859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234666857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &234666860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234666858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &237973676
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2495,6 +2959,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 388178546}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &388178548 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 388178546}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &388178549 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 388178546}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &388178550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388178548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &388178551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388178549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &396375894
 GameObject:
   m_ObjectHideFlags: 0
@@ -2863,6 +3397,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 434171930}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &434171932 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 434171930}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &434171933 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 434171930}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &434171934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434171932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &434171935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434171933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &443491454
 GameObject:
   m_ObjectHideFlags: 0
@@ -3201,6 +3805,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 508753522}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &508753524 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 508753522}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &508753525 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 508753522}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &508753526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508753524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &508753527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508753525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &510974551
 GameObject:
   m_ObjectHideFlags: 0
@@ -3567,6 +4241,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 565686556}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &565686558 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 565686556}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &565686559 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 565686556}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &565686560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565686558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &565686561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565686559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &580156758
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4536,6 +5280,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 795624725}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &795624727 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 795624725}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &795624728 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 795624725}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &795624729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795624727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &795624730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795624728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &809302487
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4829,6 +5643,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 851408902}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &851408904 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 851408902}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &851408905 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 851408902}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &851408906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851408904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &851408907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851408905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &860214011
 GameObject:
   m_ObjectHideFlags: 0
@@ -5068,6 +5952,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 866386748}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &866386750 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 866386748}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &866386751 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 866386748}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &866386752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866386750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &866386753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866386751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &873339496
 GameObject:
   m_ObjectHideFlags: 0
@@ -5186,6 +6140,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 882013651}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &882013653 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 882013651}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &882013654 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 882013651}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &882013655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882013653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &882013656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882013654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &886430743
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5256,6 +6280,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 886430743}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &886430745 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 886430743}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &886430746 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 886430743}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &886430747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886430745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &886430748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886430746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &886898209
 GameObject:
   m_ObjectHideFlags: 0
@@ -5461,6 +6555,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 926284401}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &926284403 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 926284401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &926284404 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 926284401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &926284405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926284403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &926284406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926284404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &938866318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5867,6 +7031,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 999880476}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &999880478 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 999880476}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &999880479 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 999880476}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &999880480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999880478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &999880481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999880479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1006637893
 GameObject:
   m_ObjectHideFlags: 0
@@ -6219,6 +7453,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 1080919378}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1080919380 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1080919378}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1080919381 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1080919378}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1080919382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080919380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1080919383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080919381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &1083437584 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1992395525383457067, guid: b9445dfc252e9514eae9567a51b2b999, type: 3}
@@ -6409,6 +7713,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 1107078764}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1107078766 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1107078764}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1107078767 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1107078764}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1107078768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107078766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1107078769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107078767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1111320686
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6479,6 +7853,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 1111320686}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1111320688 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1111320686}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1111320689 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1111320686}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1111320690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111320688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1111320691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111320689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1135998984
 GameObject:
   m_ObjectHideFlags: 0
@@ -6718,6 +8162,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 1261652663}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1261652665 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1261652663}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1261652666 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1261652663}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1261652667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261652665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1261652668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261652666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1282590149
 GameObject:
   m_ObjectHideFlags: 0
@@ -6836,6 +8350,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 1286217667}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1286217669 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1286217667}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1286217670 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1286217667}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1286217671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286217669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1286217672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286217670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1295153403
 GameObject:
   m_ObjectHideFlags: 0
@@ -7002,6 +8586,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 1317141211}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1317141213 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1317141211}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1317141214 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1317141211}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1317141215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317141213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1317141216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317141214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1329230253
 GameObject:
   m_ObjectHideFlags: 0
@@ -7220,6 +8874,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 1338127507}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1338127509 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1338127507}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1338127510 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1338127507}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1338127511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338127509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1338127512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338127510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1341665859
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7290,6 +9014,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 1341665859}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1341665861 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1341665859}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1341665862 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1341665859}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1341665863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341665861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1341665864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341665862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &1341944637 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1992395525383457067, guid: b9445dfc252e9514eae9567a51b2b999, type: 3}
@@ -7560,6 +9354,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 1406883313}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1406883315 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1406883313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1406883316 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1406883313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1406883317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406883315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1406883318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406883316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1429395566
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7904,6 +9768,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 1459577863}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1459577865 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1459577863}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1459577866 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1459577863}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1459577867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459577865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1459577868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459577866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &1467068153 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1992395525383457067, guid: b9445dfc252e9514eae9567a51b2b999, type: 3}
@@ -8041,6 +9975,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 1484166879}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1484166881 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1484166879}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1484166882 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1484166879}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1484166883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484166881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1484166884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484166882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1501996478
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8471,6 +10475,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 1586029953}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1586029955 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1586029953}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1586029956 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1586029953}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1586029957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586029955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1586029958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586029956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1586744677
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8541,6 +10615,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 1586744677}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1586744679 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1586744677}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1586744680 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1586744677}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1586744681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586744679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1586744682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586744680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &1598913793 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1992395525383457067, guid: b9445dfc252e9514eae9567a51b2b999, type: 3}
@@ -8903,6 +11047,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 1700939006}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1700939008 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1700939006}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1700939009 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1700939006}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1700939010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700939008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1700939011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700939009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1711105290
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8973,6 +11187,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 1711105290}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1711105292 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1711105290}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1711105293 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1711105290}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1711105294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711105292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1711105295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711105293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &1711934028 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1992395525383457067, guid: b9445dfc252e9514eae9567a51b2b999, type: 3}
@@ -9201,6 +11485,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 1733825563}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1733825565 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1733825563}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1733825566 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1733825563}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1733825567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733825565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1733825568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733825566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1737172788
 GameObject:
   m_ObjectHideFlags: 0
@@ -9367,6 +11721,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 1744193682}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1744193684 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1744193682}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1744193685 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1744193682}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1744193686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744193684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1744193687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744193685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1746450206
 GameObject:
   m_ObjectHideFlags: 0
@@ -9591,6 +12015,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3960134469711391549, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
   m_PrefabInstance: {fileID: 1781179049}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1781179051 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1781179049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1781179052 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 1781179049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1781179053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781179051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1781179054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781179052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1787773425
 GameObject:
   m_ObjectHideFlags: 0
@@ -11170,6 +13664,41 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b90769499d4be1f42b9f104856feb255, type: 3}
+--- !u!1 &2417285396164384618 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5997321155541902389, guid: b90769499d4be1f42b9f104856feb255, type: 3}
+  m_PrefabInstance: {fileID: 2417285396164384617}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2417285396164384619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2417285396164384618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 958001225
+      Data2: 1260926706
+      Data3: 988199844
+      Data4: -1966234687
+    Path: event:/SFX/Crash
+  Event: 
+  PlayEvent: 11
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &3977546007475649179
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11483,6 +14012,48 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a18c89e9c020f7648a66c61ce82f9721, type: 3}
+--- !u!1 &3977546007475649180 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 533746405865493907, guid: a18c89e9c020f7648a66c61ce82f9721, type: 3}
+  m_PrefabInstance: {fileID: 3977546007475649179}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3977546007475649181 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2056840230198946094, guid: a18c89e9c020f7648a66c61ce82f9721, type: 3}
+  m_PrefabInstance: {fileID: 3977546007475649179}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3977546007475649182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3977546007475649180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Location
+  TriggerEvent: 1
+  Value: 2
+--- !u!114 &3977546007475649183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3977546007475649181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Location
+  TriggerEvent: 1
+  Value: 2
 --- !u!1001 &5169608391075140239
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11544,6 +14115,76 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+--- !u!1 &5169608391075140240 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7992101144478289981, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 5169608391075140239}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5169608391075140241 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7204114877795790309, guid: 8631ddcb8a5bff5499850f1cb95b5982, type: 3}
+  m_PrefabInstance: {fileID: 5169608391075140239}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5169608391075140242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5169608391075140240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &5169608391075140243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5169608391075140241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -745773981
+      Data2: 1158865711
+      Data3: -1890864727
+      Data4: 1652384491
+    Path: event:/SFX/Voices
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &5562930240697710352
 PrefabInstance:
   m_ObjectHideFlags: 0
