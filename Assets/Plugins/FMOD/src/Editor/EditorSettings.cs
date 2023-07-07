@@ -437,6 +437,10 @@ namespace FMODUnity
             {
                 UnityEngine.Object.DestroyImmediate(platform, true);
             }
+            Settings.Initialize();
+#if UNITY_EDITOR
+            Settings.EditorSettings.CheckActiveBuildTarget();
+#endif
         }
 
         public bool CanBuildTarget(BuildTarget target, Platform.BinaryType binaryType, out string error)
@@ -542,7 +546,9 @@ namespace FMODUnity
                     RuntimeUtils.DebugLogFormat("FMOD: Generating static plugin registration code in {0}", RegisterStaticPluginsAssetPathFull);
 
                     string filePath = Application.dataPath + "/" + RegisterStaticPluginsAssetPathRelative;
+#pragma warning disable CS0436 // Type conflicts with imported type
                     CodeGeneration.GenerateStaticPluginRegistration(filePath, platform, reportError);
+#pragma warning restore CS0436 // Type conflicts with imported type
                     AssetDatabase.ImportAsset(RegisterStaticPluginsAssetPathFull);
                 }
                 else
