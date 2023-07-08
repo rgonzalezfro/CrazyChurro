@@ -684,15 +684,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: prop_bank
+      name: prop_bank_1
       rect:
         serializedVersion: 2
         x: 125
         y: 32
-        width: 22
+        width: 21
         height: 16
       alignment: 9
-      pivot: {x: 0.5172556, y: 0.5593138}
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1166,6 +1166,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: prop_car
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 48
+        width: 76
+        height: 43
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12ea87c3904ff0d4a833e3e8414df143
+      internalID: 341544146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prop_bank_2
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 32
+        width: 21
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e35471091000e8d49b484df247544654
+      internalID: 276607150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prop_galpon
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 80
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 711f29954fd9211459a60eabf35fd887
+      internalID: -1311476687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1203,9 +1266,12 @@ TextureImporter:
       npc_51: 464708025
       npc_60: -917658912
       npc_61: -1506437954
-      prop_bank: -1680693295
+      prop_bank_1: -1680693295
+      prop_bank_2: 276607150
       prop_bar_1: -1634855125
       prop_bar_2: -1726724560
+      prop_car: 341544146
+      prop_galpon: -1311476687
       prop_lamp_1: 1582156373
       prop_lamp_2: -331626945
       prop_sign_1: 114039924
