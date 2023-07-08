@@ -7,6 +7,7 @@ public class UIManagerIngame : MonoBehaviour
     private bool paused = false;
 
     public bool isMobile;
+    public bool isPlayer2;
 
     [Header("Sources")]
     [SerializeField]
@@ -81,12 +82,22 @@ public class UIManagerIngame : MonoBehaviour
 
     private void HandleHornCooldown(HornCooldownStartPayload payload)
     {
-        UIHornController.StartCoodown(payload.DurationSeconds);
+        if (isPlayer2 && payload.Player2)
+        {
+            UIHornController.StartCoodown(payload.DurationSeconds);
+        }
+        else if (!isPlayer2 && !payload.Player2)
+        {
+            UIHornController.StartCoodown(payload.DurationSeconds);
+        }
     }
 
     private void HandleSetHP(SetHPPayload payload)
     {
-        UIHpController.SetHP(payload.HP);
+        if (isPlayer2 && payload.Player2)
+            UIHpController.SetHP(payload.HP);
+        else if (!isPlayer2 && !payload.Player2)
+            UIHpController.SetHP(payload.HP);
     }
 
     private void OnDestroy()

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerHPController : MonoBehaviour
 {
+    public bool isPlayer2;
+
     [Header("HP Settings")]
     [SerializeField]
     private int maxHp = 3;
@@ -29,7 +31,7 @@ public class PlayerHPController : MonoBehaviour
         playerController = GetComponent<PlayerController>();
         currentHp = maxHp;
 
-        Messenger.Default.Publish(new SetHPPayload(currentHp));
+        Messenger.Default.Publish(new SetHPPayload(currentHp, isPlayer2));
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -40,7 +42,7 @@ public class PlayerHPController : MonoBehaviour
             playerController.enabled = false;
             hasCrashed = true;
             currentHp--;
-            Messenger.Default.Publish(new SetHPPayload(currentHp));
+            Messenger.Default.Publish(new SetHPPayload(currentHp, isPlayer2));
             if (currentHp > 0)
             {
                 StartCoroutine(EnableControls());

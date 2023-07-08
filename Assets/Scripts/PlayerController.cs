@@ -4,6 +4,8 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
+    public bool isPlayer2;
+
     [Header("Debug")]
     public float throttle;
     public float steering;
@@ -109,10 +111,36 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (!isMobile)
+        if (!isMobile && !isPlayer2)
         {
             throttle = Input.GetAxis("Vertical");
             steering = Input.GetAxis("Horizontal");
+        }
+
+        if (isPlayer2)
+        {
+            steering = 0;
+            throttle = 0;
+
+            if (Input.GetKey(KeyCode.J))
+            {
+                steering = -1;
+            }
+
+            if (Input.GetKey(KeyCode.L))
+            {
+                steering = 1;
+            }
+
+            if (Input.GetKey(KeyCode.I))
+            {
+                throttle = 1;
+            }
+
+            if (Input.GetKey(KeyCode.K))
+            {
+                throttle = -1;
+            }
         }
 
         AlignSpeedAndDirection();
@@ -143,7 +171,11 @@ public class PlayerController : MonoBehaviour
 
     private void SoundHornKey()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (isPlayer2 && Input.GetKeyDown(KeyCode.RightShift))
+        {
+            SoundHorn();
+        }
+        else if (Input.GetKeyDown(KeyCode.Space))
         {
             SoundHorn();
         }
@@ -154,7 +186,7 @@ public class PlayerController : MonoBehaviour
         if (!_hornInCooldown)
         {
             Messenger.Default.Publish(new HornSoundPayload(transform.position));
-            Messenger.Default.Publish(new HornCooldownStartPayload(_hornCooldownDuration));
+            Messenger.Default.Publish(new HornCooldownStartPayload(_hornCooldownDuration, isPlayer2));
             _hornInCooldown = true;
             _hornCooldownTime = 0;
         }
