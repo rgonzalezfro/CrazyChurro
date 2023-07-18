@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     public bool isPlayer2;
+    public Player Id { get; private set; }
 
     [Header("Debug")]
     public float throttle;
@@ -47,6 +48,11 @@ public class PlayerController : MonoBehaviour
     public TouchControl leftButton;
     public TouchControl rightButton;
     public Button hornButton;
+
+    public void SetId(Player id)
+    {
+        Id = id;
+    }
 
     private void Awake()
     {
@@ -111,36 +117,10 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (!isMobile && !isPlayer2)
+        if (!isMobile)
         {
-            throttle = Input.GetAxis("Vertical");
-            steering = Input.GetAxis("Horizontal");
-        }
-
-        if (isPlayer2)
-        {
-            steering = 0;
-            throttle = 0;
-
-            if (Input.GetKey(KeyCode.J))
-            {
-                steering = -1;
-            }
-
-            if (Input.GetKey(KeyCode.L))
-            {
-                steering = 1;
-            }
-
-            if (Input.GetKey(KeyCode.I))
-            {
-                throttle = 1;
-            }
-
-            if (Input.GetKey(KeyCode.K))
-            {
-                throttle = -1;
-            }
+            throttle = GetThrottleKeys();
+            steering = GetSteeringKeys();
         }
 
         AlignSpeedAndDirection();
@@ -154,6 +134,53 @@ public class PlayerController : MonoBehaviour
         HornCooldown();
 
         SoundHornKey();
+    }
+
+    private float GetThrottleKeys()
+    {
+        float _throttle = 0;
+        if (Id == Player.One)
+        {
+            _throttle = Input.GetAxis("Vertical");
+        }
+        else if (Id == Player.Two)
+        {
+            if (Input.GetKey(KeyCode.I))
+            {
+                _throttle = 1;
+            }
+
+            if (Input.GetKey(KeyCode.K))
+            {
+                _throttle = -1;
+            }
+        }
+        return _throttle;
+    }
+
+    private float GetSteeringKeys()
+    {
+        float _steering = 0;
+        if (Id == Player.One)
+        {
+            _steering = Input.GetAxis("Horizontal");
+        }
+        else if (Id == Player.Two)
+        {
+            _steering = 0;
+
+            if (Input.GetKey(KeyCode.J))
+            {
+                _steering = -1;
+            }
+
+            if (Input.GetKey(KeyCode.L))
+            {
+                _steering = 1;
+            }
+        }
+
+        return _steering;
     }
 
     private void HornCooldown()
@@ -175,7 +202,7 @@ public class PlayerController : MonoBehaviour
         {
             SoundHorn();
         }
-        else if (Input.GetKeyDown(KeyCode.Space))
+        if (!isPlayer2 && Input.GetKeyDown(KeyCode.Space))
         {
             SoundHorn();
         }
@@ -186,7 +213,7 @@ public class PlayerController : MonoBehaviour
         if (!_hornInCooldown)
         {
             Messenger.Default.Publish(new HornSoundPayload(transform.position));
-            Messenger.Default.Publish(new HornCooldownStartPayload(_hornCooldownDuration, isPlayer2));
+            Messenger.Default.Publish(new HornCooldownStartPayload(_hornCooldownDuration, Id));
             _hornInCooldown = true;
             _hornCooldownTime = 0;
         }

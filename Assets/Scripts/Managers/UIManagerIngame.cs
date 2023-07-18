@@ -1,4 +1,5 @@
 using SuperMaxim.Messaging;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class UIManagerIngame : MonoBehaviour
@@ -7,16 +8,21 @@ public class UIManagerIngame : MonoBehaviour
     private bool paused = false;
 
     public bool isMobile;
-    public bool isPlayer2;
 
-    [Header("Sources")]
-    [SerializeField]
-    PlayerScoreController player;
+    Dictionary<Player, PlayerScoreController> players = new();
 
     [Header("UI Panels")]
 
     [SerializeField]
-    GameObject HUD;
+    GameObject HUDParent;
+    [SerializeField]
+    GameObject HUDPlayer1;
+    [SerializeField]
+    GameObject HUDPlayer2;
+
+    [SerializeField]
+    GameObject ScreenDivision;
+
     [SerializeField]
     GameObject UIControls;
     [SerializeField]
@@ -31,6 +37,11 @@ public class UIManagerIngame : MonoBehaviour
     UIHPController UIHpController;
 
     [SerializeField]
+    UIHornController UIHornControllerPlayer2;
+    [SerializeField]
+    UIHPController UIHpControllerPlayer2;
+
+    [SerializeField]
     UIEndScreenController UIEndScreenController;
 
     void Start()
@@ -40,6 +51,9 @@ public class UIManagerIngame : MonoBehaviour
             isMobile = Application.isMobilePlatform;
         }
 
+        ScreenDivision.SetActive(GameManager.Instance.IsMultiplayer());
+        HUDPlayer2.SetActive(GameManager.Instance.IsMultiplayer());
+
         UIControls.SetActive(isMobile);
 
         Messenger.Default.Subscribe<EscapePayload>(TogglePause);
@@ -47,10 +61,10 @@ public class UIManagerIngame : MonoBehaviour
         Messenger.Default.Subscribe<HornCooldownStartPayload>(HandleHornCooldown);
         Messenger.Default.Subscribe<SetHPPayload>(HandleSetHP);
 
-        if (player is null)
+        players.Add(Player.One, GameManager.Instance.GetPlayer(Player.One).GetComponent<PlayerScoreController>());
+        if (GameManager.Instance.IsMultiplayer())
         {
-            Debug.LogWarning("No hay referencia al player en el UI Manager");
-            player = FindObjectOfType<PlayerScoreController>();
+            players.Add(Player.Two, GameManager.Instance.GetPlayer(Player.Two).GetComponent<PlayerScoreController>());
         }
     }
 
@@ -60,7 +74,7 @@ public class UIManagerIngame : MonoBehaviour
         {
             paused = !paused;
 
-            HUD.SetActive(!paused);
+            HUDParent.SetActive(!paused);
             Menu.SetActive(paused);
 
             Time.timeScale = paused ? 0 : 1;
@@ -77,27 +91,27 @@ public class UIManagerIngame : MonoBehaviour
         endGame = true;
         Time.timeScale = 0;
         EndGame.SetActive(true);
-        UIEndScreenController.ShowEndScore(player.GetScore());
+        UIEndScreenController.ShowEndScore(players[Player.One].GetScore());
     }
 
     private void HandleHornCooldown(HornCooldownStartPayload payload)
     {
-        if (isPlayer2 && payload.Player2)
+        if (payload.Id == Player.One)
         {
             UIHornController.StartCoodown(payload.DurationSeconds);
         }
-        else if (!isPlayer2 && !payload.Player2)
+        else if (payload.Id == Player.Two)
         {
-            UIHornController.StartCoodown(payload.DurationSeconds);
+            UIHornControllerPlayer2.StartCoodown(payload.DurationSeconds);
         }
     }
 
     private void HandleSetHP(SetHPPayload payload)
     {
-        if (isPlayer2 && payload.Player2)
+        if (payload.Id == Player.One)
             UIHpController.SetHP(payload.HP);
-        else if (!isPlayer2 && !payload.Player2)
-            UIHpController.SetHP(payload.HP);
+        else if (payload.Id == Player.Two)
+            UIHpControllerPlayer2.SetHP(payload.HP);
     }
 
     private void OnDestroy()

@@ -1,4 +1,5 @@
 using SuperMaxim.Messaging;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -27,7 +28,14 @@ public class GameManager : MonoBehaviour
         Init();
     }
 
+    private GameMode gameMode;
+
+    [SerializeField]
+    private GameObject playerPrefab;
+
     private int bestScore;
+
+    private Dictionary<Player, GameObject> players = new();
 
     private void Init()
     {
@@ -49,6 +57,28 @@ public class GameManager : MonoBehaviour
     {
         bestScore = score;
         PlayerPrefs.SetInt("BestScore", bestScore);
+    }
+
+    public void SetGameMode(GameMode mode)
+    {
+        gameMode = mode;
+    }
+
+    public bool IsMultiplayer()
+    {
+        return gameMode == GameMode.MultiPlayer;
+    }
+
+    public GameObject GetPlayer(Player playerEnum)
+    {
+        GameObject player;
+        if (!players.TryGetValue(playerEnum, out player))
+        {
+            player = Instantiate(playerPrefab);
+            player.GetComponent<PlayerController>().SetId(playerEnum);
+            players.Add(playerEnum, player);
+        }
+        return player;
     }
 
     private void Update()

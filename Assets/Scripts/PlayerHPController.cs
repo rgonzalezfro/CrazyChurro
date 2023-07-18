@@ -31,7 +31,7 @@ public class PlayerHPController : MonoBehaviour
         playerController = GetComponent<PlayerController>();
         currentHp = maxHp;
 
-        Messenger.Default.Publish(new SetHPPayload(currentHp, isPlayer2));
+        Messenger.Default.Publish(new SetHPPayload(currentHp, playerController.Id));
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -42,7 +42,7 @@ public class PlayerHPController : MonoBehaviour
             playerController.enabled = false;
             hasCrashed = true;
             currentHp--;
-            Messenger.Default.Publish(new SetHPPayload(currentHp, isPlayer2));
+            Messenger.Default.Publish(new SetHPPayload(currentHp, playerController.Id));
             if (currentHp > 0)
             {
                 StartCoroutine(EnableControls());

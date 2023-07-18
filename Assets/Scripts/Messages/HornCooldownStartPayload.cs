@@ -2,11 +2,11 @@
 public class HornCooldownStartPayload
 {
     public float DurationSeconds { get; private set; }
-    public bool Player2 { get; private set; }
+    public Player Id { get; private set; }
 
-    public HornCooldownStartPayload(float durationSeconds, bool player2 = false)
+    public HornCooldownStartPayload(float durationSeconds, Player playerId)
     {
         DurationSeconds = durationSeconds;
-        Player2 = player2;
+        Id = playerId;
     }
 }
