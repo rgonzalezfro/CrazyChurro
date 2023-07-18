@@ -61,10 +61,10 @@ public class PlayerController : MonoBehaviour
             isMobile = Application.isMobilePlatform;
         }
 
-        if (isMobile)
-        {
-            InitMobileControls();
-        }
+        //if (isMobile)
+        //{
+        //    InitMobileControls();
+        //}
 
         rb = GetComponent<Rigidbody2D>();
 
@@ -74,33 +74,33 @@ public class PlayerController : MonoBehaviour
 
     private void OnDestroy()
     {
-        upButton.OnPress -= () => SetVerticalInput(1);
-        downButton.OnPress -= () => SetVerticalInput(-1);
-        leftButton.OnPress -= () => SetHorizontalInput(-1);
-        rightButton.OnPress -= () => SetHorizontalInput(1);
+        //upButton.OnPress -= () => SetVerticalInput(1);
+        //downButton.OnPress -= () => SetVerticalInput(-1);
+        //leftButton.OnPress -= () => SetHorizontalInput(-1);
+        //rightButton.OnPress -= () => SetHorizontalInput(1);
 
-        upButton.OnRelease -= () => SetVerticalInput(0);
-        downButton.OnRelease -= () => SetVerticalInput(0);
-        leftButton.OnRelease -= () => SetHorizontalInput(0);
-        rightButton.OnRelease -= () => SetHorizontalInput(0);
+        //upButton.OnRelease -= () => SetVerticalInput(0);
+        //downButton.OnRelease -= () => SetVerticalInput(0);
+        //leftButton.OnRelease -= () => SetHorizontalInput(0);
+        //rightButton.OnRelease -= () => SetHorizontalInput(0);
 
-        hornButton.onClick.RemoveAllListeners();
+        //hornButton.onClick.RemoveAllListeners();
     }
 
     void InitMobileControls()
     {
         //Debug.LogWarning("UI INPUT INIT");
-        upButton.OnPress += () => SetVerticalInput(1);
-        downButton.OnPress += () => SetVerticalInput(-1);
-        leftButton.OnPress += () => SetHorizontalInput(-1);
-        rightButton.OnPress += () => SetHorizontalInput(1);
+        //upButton.OnPress += () => SetVerticalInput(1);
+        //downButton.OnPress += () => SetVerticalInput(-1);
+        //leftButton.OnPress += () => SetHorizontalInput(-1);
+        //rightButton.OnPress += () => SetHorizontalInput(1);
 
-        upButton.OnRelease += () => SetVerticalInput(0);
-        downButton.OnRelease += () => SetVerticalInput(0);
-        leftButton.OnRelease += () => SetHorizontalInput(0);
-        rightButton.OnRelease += () => SetHorizontalInput(0);
+        //upButton.OnRelease += () => SetVerticalInput(0);
+        //downButton.OnRelease += () => SetVerticalInput(0);
+        //leftButton.OnRelease += () => SetHorizontalInput(0);
+        //rightButton.OnRelease += () => SetHorizontalInput(0);
 
-        hornButton.onClick.AddListener(() => { SoundHorn(); });
+        //hornButton.onClick.AddListener(() => { SoundHorn(); });
     }
 
     void SetVerticalInput(float value)

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class TimeManager : MonoBehaviour
 {
     public float totalTime = 60f; // Total time in seconds
-    public Slider timerSlider; // Reference to the slider
+    //public Slider timerSlider; // Reference to the slider
     public TMP_Text timerText; // Reference to the text displaying time
 
     private float currentTime; // Current time in seconds
@@ -47,7 +47,7 @@ public class TimeManager : MonoBehaviour
         seconds = Mathf.FloorToInt(currentTime % 60f);
 
         // Update the slider value (normalized between 0 and 1)
-        timerSlider.value = 1 - (currentTime / totalTime);
+        //timerSlider.value = 1 - (currentTime / totalTime);
 
         // Update the text displaying time
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);

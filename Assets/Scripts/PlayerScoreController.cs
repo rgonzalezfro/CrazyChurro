@@ -1,15 +1,18 @@
-using TMPro;
+using SuperMaxim.Messaging;
+//using TMPro;
 using UnityEngine;
 
 public class PlayerScoreController : MonoBehaviour
 {
-    [SerializeField]
-    private TMP_Text scoreText;
+    //[SerializeField]
+    //private TMP_Text scoreText;
 
     private int score;
+    private PlayerController controller;
 
     private void Start()
     {
+        controller = GetComponent<PlayerController>();
         UpdateUI();
     }
 
@@ -26,6 +29,7 @@ public class PlayerScoreController : MonoBehaviour
 
     private void UpdateUI()
     {
-        scoreText.text = $"{score}";
+        Messenger.Default.Publish(new PlayerScorePayload(score, controller.Id));
+        //scoreText.text = $"{score}";
     }
 }

@@ -78,6 +78,12 @@ public class GameManager : MonoBehaviour
             player.GetComponent<PlayerController>().SetId(playerEnum);
             players.Add(playerEnum, player);
         }
+        else if (!player)
+        {
+            player = Instantiate(playerPrefab);
+            player.GetComponent<PlayerController>().SetId(playerEnum);
+            players[playerEnum] = player;
+        }
         return player;
     }
 

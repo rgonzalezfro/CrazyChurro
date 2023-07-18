@@ -1,5 +1,6 @@
 using SuperMaxim.Messaging;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class UIManagerIngame : MonoBehaviour
@@ -30,19 +31,25 @@ public class UIManagerIngame : MonoBehaviour
     [SerializeField]
     GameObject EndGame;
 
-    [Header("Controllers")]
+    [Header("General Controllers")]
+    [SerializeField]
+    UIEndScreenController UIEndScreenController;
+
+    [Header("Controllers P1")]
     [SerializeField]
     UIHornController UIHornController;
     [SerializeField]
     UIHPController UIHpController;
+    [SerializeField]
+    TMP_Text scoreText;
 
+    [Header("Controllers P2")]
     [SerializeField]
     UIHornController UIHornControllerPlayer2;
     [SerializeField]
     UIHPController UIHpControllerPlayer2;
-
     [SerializeField]
-    UIEndScreenController UIEndScreenController;
+    TMP_Text scoreTextPlayer2;
 
     void Start()
     {
@@ -60,6 +67,7 @@ public class UIManagerIngame : MonoBehaviour
         Messenger.Default.Subscribe<EndGamePayload>(ShowEndScreen);
         Messenger.Default.Subscribe<HornCooldownStartPayload>(HandleHornCooldown);
         Messenger.Default.Subscribe<SetHPPayload>(HandleSetHP);
+        Messenger.Default.Subscribe<PlayerScorePayload>(HandleScore);
 
         players.Add(Player.One, GameManager.Instance.GetPlayer(Player.One).GetComponent<PlayerScoreController>());
         if (GameManager.Instance.IsMultiplayer())
@@ -97,13 +105,9 @@ public class UIManagerIngame : MonoBehaviour
     private void HandleHornCooldown(HornCooldownStartPayload payload)
     {
         if (payload.Id == Player.One)
-        {
             UIHornController.StartCoodown(payload.DurationSeconds);
-        }
         else if (payload.Id == Player.Two)
-        {
             UIHornControllerPlayer2.StartCoodown(payload.DurationSeconds);
-        }
     }
 
     private void HandleSetHP(SetHPPayload payload)
@@ -114,6 +118,14 @@ public class UIManagerIngame : MonoBehaviour
             UIHpControllerPlayer2.SetHP(payload.HP);
     }
 
+    private void HandleScore(PlayerScorePayload payload)
+    {
+        if (payload.Id == Player.One)
+            scoreText.text = payload.Score.ToString();
+        else if (payload.Id == Player.Two)
+            scoreTextPlayer2.text = payload.Score.ToString();
+    }
+
     private void OnDestroy()
     {
         Time.timeScale = 1;
@@ -121,5 +133,6 @@ public class UIManagerIngame : MonoBehaviour
         Messenger.Default.Unsubscribe<EndGamePayload>(ShowEndScreen);
         Messenger.Default.Unsubscribe<HornCooldownStartPayload>(HandleHornCooldown);
         Messenger.Default.Unsubscribe<SetHPPayload>(HandleSetHP);
+        Messenger.Default.Unsubscribe<PlayerScorePayload>(HandleScore);
     }
 }
