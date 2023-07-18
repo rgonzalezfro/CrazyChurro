@@ -109,7 +109,7 @@ RectTransform:
   m_Children:
   - {fileID: 1148997381}
   m_Father: {fileID: 3977546008831278962}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2127,7 +2127,7 @@ RectTransform:
   - {fileID: 4357679680402822017}
   - {fileID: 2832506784988120965}
   m_Father: {fileID: 3977546008831278962}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2796,7 +2796,7 @@ RectTransform:
   - {fileID: 5248804468034405024}
   - {fileID: 8494224287769616340}
   m_Father: {fileID: 3977546008831278962}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2861,11 +2861,11 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1572379577}
   - {fileID: 3977546008411696506}
   - {fileID: 1371420687864039211}
   - {fileID: 5071014224534819641}
   - {fileID: 1557487769063746623}
-  - {fileID: 1572379577}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2955,13 +2955,13 @@ MonoBehaviour:
   UIControls: {fileID: 7635698610714376165}
   Menu: {fileID: 6152346453808297910}
   EndGame: {fileID: 3166248939456449224}
+  UIEndScreenController: {fileID: 8638848541682991934}
   UIHornController: {fileID: 7889840817168217083}
   UIHpController: {fileID: 6543498799593679292}
   scoreText: {fileID: 3977546008146278972}
   UIHornControllerPlayer2: {fileID: 8318705521209555798}
   UIHpControllerPlayer2: {fileID: 3348263625155312646}
   scoreTextPlayer2: {fileID: 6322757493862080714}
-  UIEndScreenController: {fileID: 8638848541682991934}
 --- !u!1 &4197640125944009575
 GameObject:
   m_ObjectHideFlags: 0
@@ -4011,7 +4011,7 @@ RectTransform:
   m_Children:
   - {fileID: 3075572551167348115}
   m_Father: {fileID: 3977546008831278962}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4686,7 +4686,7 @@ RectTransform:
   - {fileID: 1426823214178230688}
   - {fileID: 4967702318429922107}
   m_Father: {fileID: 3977546008831278962}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}

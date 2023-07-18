@@ -1,13 +1,13 @@
 using SuperMaxim.Messaging;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class TimeManager : MonoBehaviour
 {
     public float totalTime = 60f; // Total time in seconds
     //public Slider timerSlider; // Reference to the slider
     public TMP_Text timerText; // Reference to the text displaying time
+    public TMP_Text timerText2;
 
     private float currentTime; // Current time in seconds
     private bool timerStopped = false;
@@ -51,5 +51,9 @@ public class TimeManager : MonoBehaviour
 
         // Update the text displaying time
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        if (timerText2.isActiveAndEnabled)
+        {
+            timerText2.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        }
     }
 }

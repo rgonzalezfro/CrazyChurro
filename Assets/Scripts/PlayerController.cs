@@ -198,14 +198,10 @@ public class PlayerController : MonoBehaviour
 
     private void SoundHornKey()
     {
-        if (isPlayer2 && Input.GetKeyDown(KeyCode.RightShift))
-        {
+        if (Id == Player.One && Input.GetKeyDown(KeyCode.Space))
             SoundHorn();
-        }
-        if (!isPlayer2 && Input.GetKeyDown(KeyCode.Space))
-        {
+        if (Id == Player.Two && Input.GetKeyDown(KeyCode.RightShift))
             SoundHorn();
-        }
     }
 
     private void SoundHorn()
