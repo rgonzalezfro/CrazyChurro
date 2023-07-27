@@ -16,6 +16,9 @@ public class PlayerHPController : MonoBehaviour
     private string _pedestrianTag = "Pedestrian";
 
     [SerializeField]
+    private float _crashMinSpeed = 2f;
+
+    [SerializeField]
     private float _crashTime = 1f;
 
     [SerializeField]
@@ -36,13 +39,14 @@ public class PlayerHPController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (!hasCrashed && collision.gameObject.CompareTag(_pedestrianTag))
+        if (!hasCrashed && collision.gameObject.CompareTag(_pedestrianTag) && collision.relativeVelocity.magnitude > _crashMinSpeed)
         {
             _crashAnimation.SetActive(true);
             playerController.enabled = false;
             hasCrashed = true;
             currentHp--;
             Messenger.Default.Publish(new SetHPPayload(currentHp, playerController.Id));
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Crash");
             if (currentHp > 0)
             {
                 StartCoroutine(EnableControls());

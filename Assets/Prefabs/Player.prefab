@@ -87,6 +87,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3eb0450fcac376a48ad494723aac31da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlayer2: 0
   throttle: 0
   steering: 0
   angle: 0
@@ -100,6 +101,12 @@ MonoBehaviour:
   animator: {fileID: 9118518046102438110}
   VerticalAmplitude: 30
   _hornCooldownDuration: 3
+  isMobile: 0
+  upButton: {fileID: 0}
+  downButton: {fileID: 0}
+  leftButton: {fileID: 0}
+  rightButton: {fileID: 0}
+  hornButton: {fileID: 0}
 --- !u!114 &1824711922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,7 +119,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8d52d9c3e12e8d4f89d098f4b8fed72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
 --- !u!114 &8153492935865910015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,8 +131,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5c23ac7330164a4cab3666d357edf5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlayer2: 0
   maxHp: 3
   _pedestrianTag: Pedestrian
+  _crashMinSpeed: 3
   _crashTime: 1
   _crashAnimation: {fileID: 5997321155541902389}
 --- !u!1 &5997321155541902389
