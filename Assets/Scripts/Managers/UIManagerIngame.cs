@@ -96,10 +96,42 @@ public class UIManagerIngame : MonoBehaviour
 
     private void ShowEndScreen(EndGamePayload payload)
     {
+        if (GameManager.Instance.IsMultiplayer())
+        {
+            var p1Alive = players[Player.One].GetComponent<PlayerHPController>().IsAlive();
+            var p2Alive = players[Player.Two].GetComponent<PlayerHPController>().IsAlive();
+            if (p1Alive || p2Alive)
+            {
+                return;
+            }
+        }
+
         endGame = true;
         Time.timeScale = 0;
         EndGame.SetActive(true);
-        UIEndScreenController.ShowEndScore(players[Player.One].GetScore());
+
+        if (GameManager.Instance.IsMultiplayer())
+        {
+            int p1 = players[Player.One].GetScore();
+            int p2 = players[Player.Two].GetScore();
+
+            if (p1 > p2)
+            {
+                UIEndScreenController.ShowEndScore(players[Player.One].GetScore(), Player.One, true);
+            }
+            else if (p2 > p1)
+            {
+                UIEndScreenController.ShowEndScore(players[Player.Two].GetScore(), Player.Two, true);
+            }
+            else
+            {
+                UIEndScreenController.ShowEndScore(players[Player.One].GetScore(), Player.One, true, true);
+            }
+        }
+        else
+        {
+            UIEndScreenController.ShowEndScore(players[Player.One].GetScore(), Player.One, false);
+        }
     }
 
     private void HandleHornCooldown(HornCooldownStartPayload payload)

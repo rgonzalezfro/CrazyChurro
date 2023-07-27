@@ -49,9 +49,15 @@ public class PlayerHPController : MonoBehaviour
             }
             else
             {
+                StartCoroutine(FreezePosition());
                 Messenger.Default.Publish(new EndGamePayload());
             }
         }
+    }
+
+    public bool IsAlive()
+    {
+        return currentHp > 0;
     }
 
     private IEnumerator EnableControls()
@@ -59,6 +65,13 @@ public class PlayerHPController : MonoBehaviour
         yield return new WaitForSeconds(_crashTime);
         hasCrashed = false;
         playerController.enabled = true;
+    }
+
+    private IEnumerator FreezePosition()
+    {
+        yield return new WaitForSeconds(_crashTime);
+        GetComponent<Rigidbody2D>().freezeRotation = true;
+        GetComponent<Rigidbody2D>().velocity = Vector2.zero;
     }
 
     private void OnDestroy()

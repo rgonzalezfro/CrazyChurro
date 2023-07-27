@@ -8,6 +8,7 @@ public class ChangeLevelButton : MonoBehaviour
     {
         MainMenu,
         Tutorial,
+        TutorialMP,
         Level_01,
         Level_02,
         Level_03
@@ -29,6 +30,7 @@ public class ChangeLevelButton : MonoBehaviour
         {
             case Levels.MainMenu: level = "00.MainMenu"; break;
             case Levels.Tutorial: level = "01.Tutorial"; break;
+            case Levels.TutorialMP: level = "01.TutorialMultiplayer"; break;
             case Levels.Level_01: level = "02.Level_01"; break;
             case Levels.Level_02: level = "02.Level_01"; break;
             case Levels.Level_03: level = "02.Level_01"; break;
