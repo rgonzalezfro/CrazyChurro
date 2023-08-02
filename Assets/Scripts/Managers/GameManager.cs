@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
 
     private void Init()
     {
-        Application.targetFrameRate = 60;
+        Application.targetFrameRate = 30;
         bestScore = PlayerPrefs.GetInt("BestScore", 0);
     }
 

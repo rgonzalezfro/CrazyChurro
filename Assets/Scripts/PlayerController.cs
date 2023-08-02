@@ -1,3 +1,4 @@
+using FMOD.Studio;
 using SuperMaxim.Messaging;
 using UnityEngine;
 using UnityEngine.UI;
@@ -40,6 +41,9 @@ public class PlayerController : MonoBehaviour
 
     private Direction previousDirection;
 
+    private bool isMoving;
+    private EventInstance fmodEngineSoundEvent;
+
 
     [Header("Mobile Controls")]
     public bool isMobile;
@@ -61,67 +65,32 @@ public class PlayerController : MonoBehaviour
             isMobile = Application.isMobilePlatform;
         }
 
-        //if (isMobile)
-        //{
-        //    InitMobileControls();
-        //}
 
         rb = GetComponent<Rigidbody2D>();
 
         previousDirection = Direction.Up;
         SetAnimation(previousDirection, true);
+        fmodEngineSoundEvent = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/MotorOn");
+    }
+
+    private void OnDisable()
+    {
+        fmodEngineSoundEvent.stop(STOP_MODE.ALLOWFADEOUT);
+        isMoving = false;
     }
 
     private void OnDestroy()
     {
-        //upButton.OnPress -= () => SetVerticalInput(1);
-        //downButton.OnPress -= () => SetVerticalInput(-1);
-        //leftButton.OnPress -= () => SetHorizontalInput(-1);
-        //rightButton.OnPress -= () => SetHorizontalInput(1);
-
-        //upButton.OnRelease -= () => SetVerticalInput(0);
-        //downButton.OnRelease -= () => SetVerticalInput(0);
-        //leftButton.OnRelease -= () => SetHorizontalInput(0);
-        //rightButton.OnRelease -= () => SetHorizontalInput(0);
-
-        //hornButton.onClick.RemoveAllListeners();
+        fmodEngineSoundEvent.release();
     }
 
-    void InitMobileControls()
-    {
-        //Debug.LogWarning("UI INPUT INIT");
-        //upButton.OnPress += () => SetVerticalInput(1);
-        //downButton.OnPress += () => SetVerticalInput(-1);
-        //leftButton.OnPress += () => SetHorizontalInput(-1);
-        //rightButton.OnPress += () => SetHorizontalInput(1);
-
-        //upButton.OnRelease += () => SetVerticalInput(0);
-        //downButton.OnRelease += () => SetVerticalInput(0);
-        //leftButton.OnRelease += () => SetHorizontalInput(0);
-        //rightButton.OnRelease += () => SetHorizontalInput(0);
-
-        //hornButton.onClick.AddListener(() => { SoundHorn(); });
-    }
-
-    void SetVerticalInput(float value)
-    {
-        //Debug.LogWarning("VERTICAL INPUT");
-        throttle = value;
-    }
-
-    void SetHorizontalInput(float value)
-    {
-        //Debug.LogWarning("HORIZONTAL INPUT");
-        steering = value;
-    }
 
     private void Update()
     {
-        if (!isMobile)
-        {
-            throttle = GetThrottleKeys();
-            steering = GetSteeringKeys();
-        }
+        throttle = GetThrottleKeys();
+        steering = GetSteeringKeys();
+
+        EngineSound();
 
         AlignSpeedAndDirection();
 
@@ -210,6 +179,7 @@ public class PlayerController : MonoBehaviour
         {
             Messenger.Default.Publish(new HornSoundPayload(transform.position));
             Messenger.Default.Publish(new HornCooldownStartPayload(_hornCooldownDuration, Id));
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Corneta");
             _hornInCooldown = true;
             _hornCooldownTime = 0;
         }
@@ -236,6 +206,20 @@ public class PlayerController : MonoBehaviour
                 rb.AddForce(transform.up * -acceleration * Mathf.Abs(throttle));
             }
 
+        }
+    }
+
+    private void EngineSound()
+    {
+        if (!isMoving && throttle != 0)
+        {
+            fmodEngineSoundEvent.start();
+            isMoving = true;
+        }
+        if (isMoving && throttle == 0)
+        {
+            fmodEngineSoundEvent.stop(STOP_MODE.ALLOWFADEOUT);
+            isMoving = false;
         }
     }
 
